@@ -8,10 +8,12 @@ import 'package:scenarioshelf/providers/theme_mode/theme_mode_controller.dart';
 
 part 'material_color.dart';
 part 'ui_color.dart';
+part 'text_color.dart';
 
 abstract interface class ThemeColor {
   ColorScheme get material;
   _UIColor get ui;
+  _TextColor get text;
 }
 
 class LightThemeColor implements ThemeColor {
@@ -19,6 +21,8 @@ class LightThemeColor implements ThemeColor {
   final material = const _AppMaterialLight();
   @override
   final ui = LightUIColor();
+  @override
+  final text = LightTextColor();
 }
 
 class DarkThemeColor implements ThemeColor {
@@ -26,6 +30,8 @@ class DarkThemeColor implements ThemeColor {
   final material = const _AppMaterialDark();
   @override
   final ui = DarkUIColor();
+  @override
+  final text = DarkTextColor();
 }
 
 class AppColor {

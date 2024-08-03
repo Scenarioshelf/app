@@ -1,4 +1,5 @@
 {
+  "debug.toolBarLocation": "commandCenter",
   "[dart]": {
     "editor.defaultFormatter": "Dart-Code.dart-code",
     "editor.formatOnPaste": true,

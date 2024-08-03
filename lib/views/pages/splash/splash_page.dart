@@ -38,7 +38,7 @@ class SplashPage extends HookConsumerWidget {
       [],
     );
 
-    final size = MediaQuery.of(context).size;
+    final size = MediaQuery.sizeOf(context);
 
     return Scaffold(
       body: Center(

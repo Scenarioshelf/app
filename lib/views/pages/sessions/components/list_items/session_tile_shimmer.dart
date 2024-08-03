@@ -15,7 +15,7 @@ class SessionTileShimmer extends StatelessWidget {
     const heightSize = 56.0;
     const paddingSize = PaddingSize.minimum;
     const imageSize = heightSize - paddingSize * 2;
-    final size = MediaQuery.of(context).size;
+    final size = MediaQuery.sizeOf(context);
 
     return SizedBox(
       height: heightSize,
