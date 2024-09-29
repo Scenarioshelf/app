@@ -62,7 +62,7 @@ dev_dependencies:
   flutter_gen_runner: 5.6.0
   
   # Linter
-  flutter_lints: 4.0.0
+  flutter_lints: 5.0.0
   custom_lint: 0.6.4
   very_good_analysis: 6.0.0
   riverpod_lint: 2.3.12
