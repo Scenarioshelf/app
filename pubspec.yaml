@@ -5,7 +5,7 @@ description: TRPG通過シナリオ記録サービス
 
 environment: 
   sdk: '>=3.4.3 <4.0.0'
-  flutter: '3.22.3'
+  flutter: '3.24.4'
 
 dependencies: 
   flutter: 
