@@ -1,9 +1,9 @@
 part of 'app_color.dart';
 
-abstract class _TextColor {
+abstract class TextColor {
   final hintOnSurfaceContainerHighest = const Color(0xFFa3a3a3);
 }
 
-class LightTextColor extends _TextColor {}
+class LightTextColor extends TextColor {}
 
-class DarkTextColor extends _TextColor {}
+class DarkTextColor extends TextColor {}
