@@ -21,6 +21,7 @@ import 'package:scenarioshelf/utils/logger.dart';
 
 part 'auth_repository.g.dart';
 
+// 定数であることを明示的にするためにLintを無視
 // ignore: constant_identifier_names
 const EMAIL_REDIRECT_URL = 'jp.scenarioshelf://login-callback/';
 

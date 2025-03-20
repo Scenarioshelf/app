@@ -1,18 +1,15 @@
 import 'dart:ui';
 
 extension ColorsExtension on Color {
-  String toHex() {
-    final colorStr = value.toRadixString(16);
-    if (colorStr.length == 8) {
-      final hexColor = colorStr.substring(2);
-      final transparent = colorStr.substring(0, 2);
-      if (transparent == 'ff') {
-        return hexColor;
-      } else {
-        return hexColor + transparent;
-      }
-    } else {
-      return '${colorStr}00';
-    }
+  String toHex({bool hashSign = false, bool withAlpha = false}) {
+    final alpha = (a * 255).toInt().toRadixString(16).padLeft(2, '0');
+    final red = (r * 255).toInt().toRadixString(16).padLeft(2, '0');
+    final green = (g * 255).toInt().toRadixString(16).padLeft(2, '0');
+    final blue = (b * 255).toInt().toRadixString(16).padLeft(2, '0');
+
+    return '${hashSign ? '#' : ''}'
+            '${withAlpha ? alpha : ''}'
+            '$red$green$blue'
+        .toUpperCase();
   }
 }

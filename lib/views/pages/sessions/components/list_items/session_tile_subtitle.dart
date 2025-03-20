@@ -79,14 +79,14 @@ class SessionTileSubtitle extends StatelessWidget {
         Icon(
           icon,
           size: 12,
-          color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+          color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.5),
         ),
         const SizedBox(width: MarginSize.minimum),
         Text(
           label ?? '未登録',
           style: TextStyle(
             fontSize: FontSize.caption,
-            color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5),
+            color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.5),
           ),
         ),
       ],

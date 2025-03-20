@@ -1,5 +1,3 @@
-// ignore_for_file: library_private_types_in_public_api
-
 import 'package:flutter/material.dart';
 
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -11,7 +9,7 @@ part 'ui_color.dart';
 
 abstract interface class ThemeColor {
   ColorScheme get material;
-  _UIColor get ui;
+  UIColor get ui;
 }
 
 class LightThemeColor implements ThemeColor {
