@@ -7,7 +7,7 @@ part of 'participant_repository.dart';
 // **************************************************************************
 
 String _$participantRepositoryHash() =>
-    r'13c0b7fad37eb9cb6feb6088679d29a4f0883cc6';
+    r'85788b01e722f208c2e13f8bd1e0ada220198701';
 
 /// See also [participantRepository].
 @ProviderFor(participantRepository)

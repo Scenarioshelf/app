@@ -7,7 +7,7 @@ part of 'user_avatar_repository.dart';
 // **************************************************************************
 
 String _$userAvatarRepositoryHash() =>
-    r'a1f8a053aa44d29eb1033ccb5f66cc4da3de8cb1';
+    r'564c0792832c016d9f37af616951c6cf8ebe7b38';
 
 /// See also [userAvatarRepository].
 @ProviderFor(userAvatarRepository)

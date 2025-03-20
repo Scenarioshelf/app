@@ -6,7 +6,7 @@ part of 'log_observer.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$logObserverHash() => r'd70d7a460b733a74911abb0e17a488fcbe78e62a';
+String _$logObserverHash() => r'cfeba10f4ac03eaa1adb61c8040da8b14ca290c5';
 
 /// See also [logObserver].
 @ProviderFor(logObserver)
