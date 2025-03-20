@@ -7,7 +7,7 @@ import 'package:scenarioshelf/utils/extension_types/id.dart';
 part 'new_character.freezed.dart';
 
 @freezed
-class NewCharacter with _$NewCharacter {
+abstract class NewCharacter with _$NewCharacter {
   factory NewCharacter({
     required ID scenarioId,
     required String name,

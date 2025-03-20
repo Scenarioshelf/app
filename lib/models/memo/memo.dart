@@ -6,7 +6,7 @@ part 'memo.freezed.dart';
 part 'memo.g.dart';
 
 @freezed
-class Memo with _$Memo {
+abstract class Memo with _$Memo {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory Memo({
     required ID id,

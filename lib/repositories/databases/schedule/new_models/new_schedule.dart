@@ -6,7 +6,7 @@ import 'package:scenarioshelf/utils/extension_types/id.dart';
 part 'new_schedule.freezed.dart';
 
 @freezed
-class NewSchedule with _$NewSchedule {
+abstract class NewSchedule with _$NewSchedule {
   @Assert('!playtime.isNegative', 'プレイ時間が負の値になっています')
   factory NewSchedule({
     required ID sessionId,

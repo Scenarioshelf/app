@@ -8,7 +8,7 @@ import 'package:scenarioshelf/utils/extension_types/id.dart';
 part 'new_session.freezed.dart';
 
 @freezed
-class NewSession with _$NewSession {
+abstract class NewSession with _$NewSession {
   factory NewSession({
     required ID scenarioId,
     List<NewSchedule> schedules = const [],

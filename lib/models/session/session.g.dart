@@ -6,8 +6,7 @@ part of 'session.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$SessionImpl _$$SessionImplFromJson(Map<String, dynamic> json) =>
-    _$SessionImpl(
+_Session _$SessionFromJson(Map<String, dynamic> json) => _Session(
       id: ID.fromJson(json['id'] as String),
       scenario: Scenario.fromJson(json['scenario'] as Map<String, dynamic>),
       createdBy: ID.fromJson(json['created_by'] as String),
@@ -27,8 +26,7 @@ _$SessionImpl _$$SessionImplFromJson(Map<String, dynamic> json) =>
           const [],
     );
 
-Map<String, dynamic> _$$SessionImplToJson(_$SessionImpl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$SessionToJson(_Session instance) => <String, dynamic>{
       'id': instance.id,
       'scenario': instance.scenario,
       'created_by': instance.createdBy,

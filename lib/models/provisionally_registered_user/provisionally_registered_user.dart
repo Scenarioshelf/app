@@ -7,7 +7,7 @@ part 'provisionally_registered_user.freezed.dart';
 part 'provisionally_registered_user.g.dart';
 
 @freezed
-class ProvisionallyRegisteredUser with _$ProvisionallyRegisteredUser {
+abstract class ProvisionallyRegisteredUser with _$ProvisionallyRegisteredUser {
   const factory ProvisionallyRegisteredUser({
     required ID id,
     required String? name,

@@ -6,7 +6,7 @@ import 'package:scenarioshelf/utils/extension_types/id.dart';
 part 'new_participant.freezed.dart';
 
 @freezed
-class NewParticipant with _$NewParticipant {
+abstract class NewParticipant with _$NewParticipant {
   factory NewParticipant({
     required ID sessionId,
     required ParticipantRole role,

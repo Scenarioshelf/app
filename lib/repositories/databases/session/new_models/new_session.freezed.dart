@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,131 +10,58 @@ part of 'new_session.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$NewSession {
-  ID get id => throw _privateConstructorUsedError;
-  ID get scenarioId => throw _privateConstructorUsedError;
-  List<NewSchedule> get schedules => throw _privateConstructorUsedError;
-  List<NewParticipant> get participants => throw _privateConstructorUsedError;
-  List<NewMemo> get memos => throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(ID id, ID scenarioId, List<NewSchedule> schedules,
-            List<NewParticipant> participants, List<NewMemo> memos)
-        inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(ID id, ID scenarioId, List<NewSchedule> schedules,
-            List<NewParticipant> participants, List<NewMemo> memos)?
-        inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(ID id, ID scenarioId, List<NewSchedule> schedules,
-            List<NewParticipant> participants, List<NewMemo> memos)?
-        inserting,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_NewSessionInserting value) inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NewSessionInserting value)? inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NewSessionInserting value)? inserting,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  ID get id;
+  ID get scenarioId;
+  List<NewSchedule> get schedules;
+  List<NewParticipant> get participants;
+  List<NewMemo> get memos;
 
   /// Create a copy of NewSession
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $NewSessionCopyWith<NewSession> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $NewSessionCopyWith<$Res> {
-  factory $NewSessionCopyWith(
-          NewSession value, $Res Function(NewSession) then) =
-      _$NewSessionCopyWithImpl<$Res, NewSession>;
-  @useResult
-  $Res call(
-      {ID id,
-      ID scenarioId,
-      List<NewSchedule> schedules,
-      List<NewParticipant> participants,
-      List<NewMemo> memos});
-}
-
-/// @nodoc
-class _$NewSessionCopyWithImpl<$Res, $Val extends NewSession>
-    implements $NewSessionCopyWith<$Res> {
-  _$NewSessionCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of NewSession
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
+  $NewSessionCopyWith<NewSession> get copyWith =>
+      _$NewSessionCopyWithImpl<NewSession>(this as NewSession, _$identity);
+
   @override
-  $Res call({
-    Object? id = null,
-    Object? scenarioId = null,
-    Object? schedules = null,
-    Object? participants = null,
-    Object? memos = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as ID,
-      scenarioId: null == scenarioId
-          ? _value.scenarioId
-          : scenarioId // ignore: cast_nullable_to_non_nullable
-              as ID,
-      schedules: null == schedules
-          ? _value.schedules
-          : schedules // ignore: cast_nullable_to_non_nullable
-              as List<NewSchedule>,
-      participants: null == participants
-          ? _value.participants
-          : participants // ignore: cast_nullable_to_non_nullable
-              as List<NewParticipant>,
-      memos: null == memos
-          ? _value.memos
-          : memos // ignore: cast_nullable_to_non_nullable
-              as List<NewMemo>,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is NewSession &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.scenarioId, scenarioId) ||
+                other.scenarioId == scenarioId) &&
+            const DeepCollectionEquality().equals(other.schedules, schedules) &&
+            const DeepCollectionEquality()
+                .equals(other.participants, participants) &&
+            const DeepCollectionEquality().equals(other.memos, memos));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      scenarioId,
+      const DeepCollectionEquality().hash(schedules),
+      const DeepCollectionEquality().hash(participants),
+      const DeepCollectionEquality().hash(memos));
+
+  @override
+  String toString() {
+    return 'NewSession(id: $id, scenarioId: $scenarioId, schedules: $schedules, participants: $participants, memos: $memos)';
   }
 }
 
 /// @nodoc
-abstract class _$$NewSessionInsertingImplCopyWith<$Res>
-    implements $NewSessionCopyWith<$Res> {
-  factory _$$NewSessionInsertingImplCopyWith(_$NewSessionInsertingImpl value,
-          $Res Function(_$NewSessionInsertingImpl) then) =
-      __$$NewSessionInsertingImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $NewSessionCopyWith<$Res> {
+  factory $NewSessionCopyWith(
+          NewSession value, $Res Function(NewSession) _then) =
+      _$NewSessionCopyWithImpl;
   @useResult
   $Res call(
       {ID id,
@@ -144,12 +72,11 @@ abstract class _$$NewSessionInsertingImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$NewSessionInsertingImplCopyWithImpl<$Res>
-    extends _$NewSessionCopyWithImpl<$Res, _$NewSessionInsertingImpl>
-    implements _$$NewSessionInsertingImplCopyWith<$Res> {
-  __$$NewSessionInsertingImplCopyWithImpl(_$NewSessionInsertingImpl _value,
-      $Res Function(_$NewSessionInsertingImpl) _then)
-      : super(_value, _then);
+class _$NewSessionCopyWithImpl<$Res> implements $NewSessionCopyWith<$Res> {
+  _$NewSessionCopyWithImpl(this._self, this._then);
+
+  final NewSession _self;
+  final $Res Function(NewSession) _then;
 
   /// Create a copy of NewSession
   /// with the given fields replaced by the non-null parameter values.
@@ -162,25 +89,25 @@ class __$$NewSessionInsertingImplCopyWithImpl<$Res>
     Object? participants = null,
     Object? memos = null,
   }) {
-    return _then(_$NewSessionInsertingImpl(
+    return _then(_self.copyWith(
       id: null == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as ID,
       scenarioId: null == scenarioId
-          ? _value.scenarioId
+          ? _self.scenarioId
           : scenarioId // ignore: cast_nullable_to_non_nullable
               as ID,
       schedules: null == schedules
-          ? _value._schedules
+          ? _self.schedules
           : schedules // ignore: cast_nullable_to_non_nullable
               as List<NewSchedule>,
       participants: null == participants
-          ? _value._participants
+          ? _self.participants
           : participants // ignore: cast_nullable_to_non_nullable
               as List<NewParticipant>,
       memos: null == memos
-          ? _value._memos
+          ? _self.memos
           : memos // ignore: cast_nullable_to_non_nullable
               as List<NewMemo>,
     ));
@@ -189,8 +116,8 @@ class __$$NewSessionInsertingImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$NewSessionInsertingImpl implements _NewSessionInserting {
-  const _$NewSessionInsertingImpl(
+class _NewSessionInserting implements NewSession {
+  const _NewSessionInserting(
       {required this.id,
       required this.scenarioId,
       required final List<NewSchedule> schedules,
@@ -228,16 +155,20 @@ class _$NewSessionInsertingImpl implements _NewSessionInserting {
     return EqualUnmodifiableListView(_memos);
   }
 
+  /// Create a copy of NewSession
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'NewSession.inserting(id: $id, scenarioId: $scenarioId, schedules: $schedules, participants: $participants, memos: $memos)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$NewSessionInsertingCopyWith<_NewSessionInserting> get copyWith =>
+      __$NewSessionInsertingCopyWithImpl<_NewSessionInserting>(
+          this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$NewSessionInsertingImpl &&
+            other is _NewSessionInserting &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.scenarioId, scenarioId) ||
                 other.scenarioId == scenarioId) &&
@@ -257,101 +188,70 @@ class _$NewSessionInsertingImpl implements _NewSessionInserting {
       const DeepCollectionEquality().hash(_participants),
       const DeepCollectionEquality().hash(_memos));
 
+  @override
+  String toString() {
+    return 'NewSession.inserting(id: $id, scenarioId: $scenarioId, schedules: $schedules, participants: $participants, memos: $memos)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$NewSessionInsertingCopyWith<$Res>
+    implements $NewSessionCopyWith<$Res> {
+  factory _$NewSessionInsertingCopyWith(_NewSessionInserting value,
+          $Res Function(_NewSessionInserting) _then) =
+      __$NewSessionInsertingCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {ID id,
+      ID scenarioId,
+      List<NewSchedule> schedules,
+      List<NewParticipant> participants,
+      List<NewMemo> memos});
+}
+
+/// @nodoc
+class __$NewSessionInsertingCopyWithImpl<$Res>
+    implements _$NewSessionInsertingCopyWith<$Res> {
+  __$NewSessionInsertingCopyWithImpl(this._self, this._then);
+
+  final _NewSessionInserting _self;
+  final $Res Function(_NewSessionInserting) _then;
+
   /// Create a copy of NewSession
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$NewSessionInsertingImplCopyWith<_$NewSessionInsertingImpl> get copyWith =>
-      __$$NewSessionInsertingImplCopyWithImpl<_$NewSessionInsertingImpl>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(ID id, ID scenarioId, List<NewSchedule> schedules,
-            List<NewParticipant> participants, List<NewMemo> memos)
-        inserting,
+  $Res call({
+    Object? id = null,
+    Object? scenarioId = null,
+    Object? schedules = null,
+    Object? participants = null,
+    Object? memos = null,
   }) {
-    return inserting(id, scenarioId, schedules, participants, memos);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(ID id, ID scenarioId, List<NewSchedule> schedules,
-            List<NewParticipant> participants, List<NewMemo> memos)?
-        inserting,
-  }) {
-    return inserting?.call(id, scenarioId, schedules, participants, memos);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(ID id, ID scenarioId, List<NewSchedule> schedules,
-            List<NewParticipant> participants, List<NewMemo> memos)?
-        inserting,
-    required TResult orElse(),
-  }) {
-    if (inserting != null) {
-      return inserting(id, scenarioId, schedules, participants, memos);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_NewSessionInserting value) inserting,
-  }) {
-    return inserting(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NewSessionInserting value)? inserting,
-  }) {
-    return inserting?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NewSessionInserting value)? inserting,
-    required TResult orElse(),
-  }) {
-    if (inserting != null) {
-      return inserting(this);
-    }
-    return orElse();
+    return _then(_NewSessionInserting(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as ID,
+      scenarioId: null == scenarioId
+          ? _self.scenarioId
+          : scenarioId // ignore: cast_nullable_to_non_nullable
+              as ID,
+      schedules: null == schedules
+          ? _self._schedules
+          : schedules // ignore: cast_nullable_to_non_nullable
+              as List<NewSchedule>,
+      participants: null == participants
+          ? _self._participants
+          : participants // ignore: cast_nullable_to_non_nullable
+              as List<NewParticipant>,
+      memos: null == memos
+          ? _self._memos
+          : memos // ignore: cast_nullable_to_non_nullable
+              as List<NewMemo>,
+    ));
   }
 }
 
-abstract class _NewSessionInserting implements NewSession {
-  const factory _NewSessionInserting(
-      {required final ID id,
-      required final ID scenarioId,
-      required final List<NewSchedule> schedules,
-      required final List<NewParticipant> participants,
-      required final List<NewMemo> memos}) = _$NewSessionInsertingImpl;
-
-  @override
-  ID get id;
-  @override
-  ID get scenarioId;
-  @override
-  List<NewSchedule> get schedules;
-  @override
-  List<NewParticipant> get participants;
-  @override
-  List<NewMemo> get memos;
-
-  /// Create a copy of NewSession
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$NewSessionInsertingImplCopyWith<_$NewSessionInsertingImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on
