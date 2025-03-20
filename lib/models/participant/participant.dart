@@ -9,7 +9,7 @@ part 'participant.g.dart';
 part 'participant_role.dart';
 
 @freezed
-class Participant with _$Participant {
+abstract class Participant with _$Participant {
   @JsonSerializable(fieldRename: FieldRename.snake)
   const factory Participant({
     required ID id,

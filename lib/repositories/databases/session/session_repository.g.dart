@@ -6,7 +6,7 @@ part of 'session_repository.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$sessionRepositoryHash() => r'85ddb23fae2097f0fc244ae9370d6d4ef74500ea';
+String _$sessionRepositoryHash() => r'59f043fb8d0a8dbc380700775ec175caafef2a74';
 
 /// See also [sessionRepository].
 @ProviderFor(sessionRepository)
@@ -21,6 +21,8 @@ final sessionRepositoryProvider =
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef SessionRepositoryRef = AutoDisposeProviderRef<SessionRepository>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, inference_failure_on_uninitialized_variable, inference_failure_on_function_return_type, inference_failure_on_untyped_parameter, deprecated_member_use_from_same_package
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

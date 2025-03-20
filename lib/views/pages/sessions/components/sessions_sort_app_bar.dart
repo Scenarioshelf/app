@@ -27,7 +27,7 @@ class SessionsSortAppBar extends ConsumerWidget {
       snap: true,
       toolbarHeight: 32,
       surfaceTintColor: Theme.of(context).colorScheme.surface,
-      backgroundColor: Theme.of(context).colorScheme.surface.withOpacity(0.9),
+      backgroundColor: Theme.of(context).colorScheme.surface.withValues(alpha: 0.9),
       title: RichText(
         text: TextSpan(
           style: TextStyle(

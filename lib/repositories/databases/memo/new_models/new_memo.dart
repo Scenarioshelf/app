@@ -5,7 +5,7 @@ import 'package:scenarioshelf/utils/extension_types/id.dart';
 part 'new_memo.freezed.dart';
 
 @freezed
-class NewMemo with _$NewMemo {
+abstract class NewMemo with _$NewMemo {
   factory NewMemo({
     required ID sessionId,
     required String title,

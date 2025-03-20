@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -9,7 +10,7 @@ import 'package:scenarioshelf/utils/extension_types/id.dart';
 part 'scenario_key_visual_repository.g.dart';
 
 @riverpod
-ScenarioKeyVisualRepository scenarioKeyVisualRepository(ScenarioKeyVisualRepositoryRef _) => const ScenarioKeyVisualRepository();
+ScenarioKeyVisualRepository scenarioKeyVisualRepository(Ref _) => const ScenarioKeyVisualRepository();
 
 class ScenarioKeyVisualRepository implements ScenarioKeyVisualAPI {
   const ScenarioKeyVisualRepository();

@@ -9,7 +9,7 @@ import 'package:scenarioshelf/utils/extension_types/id.dart';
 part 'new_scenario.freezed.dart';
 
 @freezed
-class NewScenario with _$NewScenario {
+abstract class NewScenario with _$NewScenario {
   @Assert(r"kana == null || kana == '' || RegExp(r'^[0-9a-zA-Zァ-ンヴー ]+$').hasMatch(kana!)", 'フリガナに全角カタカナ以外の文字が含まれています')
   factory NewScenario({
     required TRPGSystem system,

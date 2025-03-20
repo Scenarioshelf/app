@@ -1,0 +1,2 @@
+/Users/micady/develop/Scenarioshelf/android/app/.cxx/Debug/01k511a4/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/micady/develop/Scenarioshelf/android/app/.cxx/Debug/01k511a4/armeabi-v7a/CMakeFiles/rebuild_cache.dir

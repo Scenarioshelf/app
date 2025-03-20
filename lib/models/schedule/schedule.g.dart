@@ -6,8 +6,7 @@ part of 'schedule.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ScheduleImpl _$$ScheduleImplFromJson(Map<String, dynamic> json) =>
-    _$ScheduleImpl(
+_Schedule _$ScheduleFromJson(Map<String, dynamic> json) => _Schedule(
       id: ID.fromJson(json['id'] as String),
       beginningTime: DateTime.parse(json['beginning_time'] as String),
       playtime: const DurationIntervalConverter()
@@ -16,8 +15,7 @@ _$ScheduleImpl _$$ScheduleImplFromJson(Map<String, dynamic> json) =>
           ScheduleType.event,
     );
 
-Map<String, dynamic> _$$ScheduleImplToJson(_$ScheduleImpl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$ScheduleToJson(_Schedule instance) => <String, dynamic>{
       'id': instance.id,
       'beginning_time': instance.beginningTime.toIso8601String(),
       'playtime': const DurationIntervalConverter().toJson(instance.playtime),

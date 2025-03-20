@@ -9,6 +9,6 @@ class SessionsSortOrderController extends _$SessionsSortOrderController {
   @override
   SortOrder build() => SortOrder.desc;
 
-  // ignore: use_setters_to_change_properties
-  void update(SortOrder order) => state = order;
+  @override
+  set state(SortOrder order) => super.state = order;
 }

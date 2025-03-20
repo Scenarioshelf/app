@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,124 +10,27 @@ part of 'user_setting_state.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$UserSettingState {
-  String get name => throw _privateConstructorUsedError;
-  Uint8List? get avatar => throw _privateConstructorUsedError;
+  String get name;
+  Uint8List? get avatar;
 
   /// Create a copy of UserSettingState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $UserSettingStateCopyWith<UserSettingState> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $UserSettingStateCopyWith<$Res> {
-  factory $UserSettingStateCopyWith(
-          UserSettingState value, $Res Function(UserSettingState) then) =
-      _$UserSettingStateCopyWithImpl<$Res, UserSettingState>;
-  @useResult
-  $Res call({String name, Uint8List? avatar});
-}
-
-/// @nodoc
-class _$UserSettingStateCopyWithImpl<$Res, $Val extends UserSettingState>
-    implements $UserSettingStateCopyWith<$Res> {
-  _$UserSettingStateCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of UserSettingState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? name = null,
-    Object? avatar = freezed,
-  }) {
-    return _then(_value.copyWith(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      avatar: freezed == avatar
-          ? _value.avatar
-          : avatar // ignore: cast_nullable_to_non_nullable
-              as Uint8List?,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$UserSettingStateImplCopyWith<$Res>
-    implements $UserSettingStateCopyWith<$Res> {
-  factory _$$UserSettingStateImplCopyWith(_$UserSettingStateImpl value,
-          $Res Function(_$UserSettingStateImpl) then) =
-      __$$UserSettingStateImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String name, Uint8List? avatar});
-}
-
-/// @nodoc
-class __$$UserSettingStateImplCopyWithImpl<$Res>
-    extends _$UserSettingStateCopyWithImpl<$Res, _$UserSettingStateImpl>
-    implements _$$UserSettingStateImplCopyWith<$Res> {
-  __$$UserSettingStateImplCopyWithImpl(_$UserSettingStateImpl _value,
-      $Res Function(_$UserSettingStateImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of UserSettingState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? name = null,
-    Object? avatar = freezed,
-  }) {
-    return _then(_$UserSettingStateImpl(
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      avatar: freezed == avatar
-          ? _value.avatar
-          : avatar // ignore: cast_nullable_to_non_nullable
-              as Uint8List?,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$UserSettingStateImpl implements _UserSettingState {
-  const _$UserSettingStateImpl({this.name = '', this.avatar});
-
-  @override
-  @JsonKey()
-  final String name;
-  @override
-  final Uint8List? avatar;
-
-  @override
-  String toString() {
-    return 'UserSettingState(name: $name, avatar: $avatar)';
-  }
+      _$UserSettingStateCopyWithImpl<UserSettingState>(
+          this as UserSettingState, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$UserSettingStateImpl &&
+            other is UserSettingState &&
             (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other.avatar, avatar));
   }
@@ -135,29 +39,126 @@ class _$UserSettingStateImpl implements _UserSettingState {
   int get hashCode => Object.hash(
       runtimeType, name, const DeepCollectionEquality().hash(avatar));
 
+  @override
+  String toString() {
+    return 'UserSettingState(name: $name, avatar: $avatar)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $UserSettingStateCopyWith<$Res> {
+  factory $UserSettingStateCopyWith(
+          UserSettingState value, $Res Function(UserSettingState) _then) =
+      _$UserSettingStateCopyWithImpl;
+  @useResult
+  $Res call({String name, Uint8List? avatar});
+}
+
+/// @nodoc
+class _$UserSettingStateCopyWithImpl<$Res>
+    implements $UserSettingStateCopyWith<$Res> {
+  _$UserSettingStateCopyWithImpl(this._self, this._then);
+
+  final UserSettingState _self;
+  final $Res Function(UserSettingState) _then;
+
   /// Create a copy of UserSettingState
   /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? name = null,
+    Object? avatar = freezed,
+  }) {
+    return _then(_self.copyWith(
+      name: null == name
+          ? _self.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      avatar: freezed == avatar
+          ? _self.avatar
+          : avatar // ignore: cast_nullable_to_non_nullable
+              as Uint8List?,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _UserSettingState implements UserSettingState {
+  const _UserSettingState({this.name = '', this.avatar});
+
+  @override
+  @JsonKey()
+  final String name;
+  @override
+  final Uint8List? avatar;
+
+  /// Create a copy of UserSettingState
+  /// with the given fields replaced by the non-null parameter values.
+  @override
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$UserSettingStateCopyWith<_UserSettingState> get copyWith =>
+      __$UserSettingStateCopyWithImpl<_UserSettingState>(this, _$identity);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _UserSettingState &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.avatar, avatar));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, name, const DeepCollectionEquality().hash(avatar));
+
+  @override
+  String toString() {
+    return 'UserSettingState(name: $name, avatar: $avatar)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$UserSettingStateCopyWith<$Res>
+    implements $UserSettingStateCopyWith<$Res> {
+  factory _$UserSettingStateCopyWith(
+          _UserSettingState value, $Res Function(_UserSettingState) _then) =
+      __$UserSettingStateCopyWithImpl;
+  @override
+  @useResult
+  $Res call({String name, Uint8List? avatar});
+}
+
+/// @nodoc
+class __$UserSettingStateCopyWithImpl<$Res>
+    implements _$UserSettingStateCopyWith<$Res> {
+  __$UserSettingStateCopyWithImpl(this._self, this._then);
+
+  final _UserSettingState _self;
+  final $Res Function(_UserSettingState) _then;
+
+  /// Create a copy of UserSettingState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$UserSettingStateImplCopyWith<_$UserSettingStateImpl> get copyWith =>
-      __$$UserSettingStateImplCopyWithImpl<_$UserSettingStateImpl>(
-          this, _$identity);
+  $Res call({
+    Object? name = null,
+    Object? avatar = freezed,
+  }) {
+    return _then(_UserSettingState(
+      name: null == name
+          ? _self.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      avatar: freezed == avatar
+          ? _self.avatar
+          : avatar // ignore: cast_nullable_to_non_nullable
+              as Uint8List?,
+    ));
+  }
 }
 
-abstract class _UserSettingState implements UserSettingState {
-  const factory _UserSettingState(
-      {final String name, final Uint8List? avatar}) = _$UserSettingStateImpl;
-
-  @override
-  String get name;
-  @override
-  Uint8List? get avatar;
-
-  /// Create a copy of UserSettingState
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$UserSettingStateImplCopyWith<_$UserSettingStateImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

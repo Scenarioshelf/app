@@ -9,6 +9,6 @@ class SessionsSortPivotController extends _$SessionsSortPivotController {
   @override
   SessionsSortPivot build() => SessionsSortPivot.createdAt;
 
-  // ignore: use_setters_to_change_properties
-  void update(SessionsSortPivot pivot) => state = pivot;
+  @override
+  set state(SessionsSortPivot pivot) => super.state = pivot;
 }

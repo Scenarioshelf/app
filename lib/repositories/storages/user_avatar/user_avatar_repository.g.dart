@@ -7,7 +7,7 @@ part of 'user_avatar_repository.dart';
 // **************************************************************************
 
 String _$userAvatarRepositoryHash() =>
-    r'a1f8a053aa44d29eb1033ccb5f66cc4da3de8cb1';
+    r'564c0792832c016d9f37af616951c6cf8ebe7b38';
 
 /// See also [userAvatarRepository].
 @ProviderFor(userAvatarRepository)
@@ -22,6 +22,8 @@ final userAvatarRepositoryProvider =
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef UserAvatarRepositoryRef = AutoDisposeProviderRef<UserAvatarRepository>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, inference_failure_on_uninitialized_variable, inference_failure_on_function_return_type, inference_failure_on_untyped_parameter, deprecated_member_use_from_same_package
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

@@ -1,6 +1,6 @@
 part of 'app_color.dart';
 
-abstract class _UIColor {
+abstract class UIColor {
   final Color white = const Color(0xFFffffff);
   final Color gray = const Color(0xFFe6e6e6);
   final Color success = const Color(0xFF00ff33);
@@ -11,7 +11,7 @@ abstract class _UIColor {
   Color get shimmerHighlight;
 }
 
-class LightUIColor extends _UIColor {
+class LightUIColor extends UIColor {
   @override
   Color get shimmerBase => const Color(0xFFeeeeee);
 
@@ -19,7 +19,7 @@ class LightUIColor extends _UIColor {
   Color get shimmerHighlight => const Color(0xFFffffff);
 }
 
-class DarkUIColor extends _UIColor {
+class DarkUIColor extends UIColor {
   @override
   Color get shimmerBase => const Color(0xFF222222);
 

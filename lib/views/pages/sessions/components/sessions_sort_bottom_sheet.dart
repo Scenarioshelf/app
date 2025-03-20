@@ -72,7 +72,7 @@ class SessionsSortBottomSheet extends ConsumerWidget {
                       ),
                     ],
                     selected: {selectedOrder},
-                    onSelectionChanged: (pivots) => ref.read(sessionsSortOrderControllerProvider.notifier).update(pivots.first),
+                    onSelectionChanged: (orders) => ref.read(sessionsSortOrderControllerProvider.notifier).state = orders.first,
                   ),
                 ),
               ),
@@ -104,7 +104,7 @@ class SessionsSortBottomSheet extends ConsumerWidget {
                             color: Theme.of(context).colorScheme.primary,
                           )
                         : null,
-                    onTap: () => ref.read(sessionsSortPivotControllerProvider.notifier).update(pivot),
+                    onTap: () => ref.read(sessionsSortPivotControllerProvider.notifier).state = pivot,
                   );
                 },
               ),

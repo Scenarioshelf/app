@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,145 +10,59 @@ part of 'new_character.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$NewCharacter {
-  ID get id => throw _privateConstructorUsedError;
-  ID get scenarioId => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  bool get isPublic => throw _privateConstructorUsedError;
-  bool get isCustomized => throw _privateConstructorUsedError;
-  int? get number => throw _privateConstructorUsedError;
-  Uint8List? get image => throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(ID id, ID scenarioId, String name, bool isPublic,
-            bool isCustomized, int? number, Uint8List? image)
-        inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(ID id, ID scenarioId, String name, bool isPublic,
-            bool isCustomized, int? number, Uint8List? image)?
-        inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(ID id, ID scenarioId, String name, bool isPublic,
-            bool isCustomized, int? number, Uint8List? image)?
-        inserting,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_NewCharacter value) inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NewCharacter value)? inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NewCharacter value)? inserting,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  ID get id;
+  ID get scenarioId;
+  String get name;
+  bool get isPublic;
+  bool get isCustomized;
+  int? get number;
+  Uint8List? get image;
 
   /// Create a copy of NewCharacter
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $NewCharacterCopyWith<NewCharacter> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $NewCharacterCopyWith<$Res> {
-  factory $NewCharacterCopyWith(
-          NewCharacter value, $Res Function(NewCharacter) then) =
-      _$NewCharacterCopyWithImpl<$Res, NewCharacter>;
-  @useResult
-  $Res call(
-      {ID id,
-      ID scenarioId,
-      String name,
-      bool isPublic,
-      bool isCustomized,
-      int? number,
-      Uint8List? image});
-}
-
-/// @nodoc
-class _$NewCharacterCopyWithImpl<$Res, $Val extends NewCharacter>
-    implements $NewCharacterCopyWith<$Res> {
-  _$NewCharacterCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of NewCharacter
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
+  $NewCharacterCopyWith<NewCharacter> get copyWith =>
+      _$NewCharacterCopyWithImpl<NewCharacter>(
+          this as NewCharacter, _$identity);
+
   @override
-  $Res call({
-    Object? id = null,
-    Object? scenarioId = null,
-    Object? name = null,
-    Object? isPublic = null,
-    Object? isCustomized = null,
-    Object? number = freezed,
-    Object? image = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as ID,
-      scenarioId: null == scenarioId
-          ? _value.scenarioId
-          : scenarioId // ignore: cast_nullable_to_non_nullable
-              as ID,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      isPublic: null == isPublic
-          ? _value.isPublic
-          : isPublic // ignore: cast_nullable_to_non_nullable
-              as bool,
-      isCustomized: null == isCustomized
-          ? _value.isCustomized
-          : isCustomized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      number: freezed == number
-          ? _value.number
-          : number // ignore: cast_nullable_to_non_nullable
-              as int?,
-      image: freezed == image
-          ? _value.image
-          : image // ignore: cast_nullable_to_non_nullable
-              as Uint8List?,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is NewCharacter &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.scenarioId, scenarioId) ||
+                other.scenarioId == scenarioId) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.isPublic, isPublic) ||
+                other.isPublic == isPublic) &&
+            (identical(other.isCustomized, isCustomized) ||
+                other.isCustomized == isCustomized) &&
+            (identical(other.number, number) || other.number == number) &&
+            const DeepCollectionEquality().equals(other.image, image));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, id, scenarioId, name, isPublic,
+      isCustomized, number, const DeepCollectionEquality().hash(image));
+
+  @override
+  String toString() {
+    return 'NewCharacter(id: $id, scenarioId: $scenarioId, name: $name, isPublic: $isPublic, isCustomized: $isCustomized, number: $number, image: $image)';
   }
 }
 
 /// @nodoc
-abstract class _$$NewCharacterImplCopyWith<$Res>
-    implements $NewCharacterCopyWith<$Res> {
-  factory _$$NewCharacterImplCopyWith(
-          _$NewCharacterImpl value, $Res Function(_$NewCharacterImpl) then) =
-      __$$NewCharacterImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $NewCharacterCopyWith<$Res> {
+  factory $NewCharacterCopyWith(
+          NewCharacter value, $Res Function(NewCharacter) _then) =
+      _$NewCharacterCopyWithImpl;
   @useResult
   $Res call(
       {ID id,
@@ -160,12 +75,11 @@ abstract class _$$NewCharacterImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$NewCharacterImplCopyWithImpl<$Res>
-    extends _$NewCharacterCopyWithImpl<$Res, _$NewCharacterImpl>
-    implements _$$NewCharacterImplCopyWith<$Res> {
-  __$$NewCharacterImplCopyWithImpl(
-      _$NewCharacterImpl _value, $Res Function(_$NewCharacterImpl) _then)
-      : super(_value, _then);
+class _$NewCharacterCopyWithImpl<$Res> implements $NewCharacterCopyWith<$Res> {
+  _$NewCharacterCopyWithImpl(this._self, this._then);
+
+  final NewCharacter _self;
+  final $Res Function(NewCharacter) _then;
 
   /// Create a copy of NewCharacter
   /// with the given fields replaced by the non-null parameter values.
@@ -180,33 +94,33 @@ class __$$NewCharacterImplCopyWithImpl<$Res>
     Object? number = freezed,
     Object? image = freezed,
   }) {
-    return _then(_$NewCharacterImpl(
+    return _then(_self.copyWith(
       id: null == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as ID,
       scenarioId: null == scenarioId
-          ? _value.scenarioId
+          ? _self.scenarioId
           : scenarioId // ignore: cast_nullable_to_non_nullable
               as ID,
       name: null == name
-          ? _value.name
+          ? _self.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       isPublic: null == isPublic
-          ? _value.isPublic
+          ? _self.isPublic
           : isPublic // ignore: cast_nullable_to_non_nullable
               as bool,
       isCustomized: null == isCustomized
-          ? _value.isCustomized
+          ? _self.isCustomized
           : isCustomized // ignore: cast_nullable_to_non_nullable
               as bool,
       number: freezed == number
-          ? _value.number
+          ? _self.number
           : number // ignore: cast_nullable_to_non_nullable
               as int?,
       image: freezed == image
-          ? _value.image
+          ? _self.image
           : image // ignore: cast_nullable_to_non_nullable
               as Uint8List?,
     ));
@@ -215,8 +129,8 @@ class __$$NewCharacterImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$NewCharacterImpl implements _NewCharacter {
-  const _$NewCharacterImpl(
+class _NewCharacter implements NewCharacter {
+  const _NewCharacter(
       {required this.id,
       required this.scenarioId,
       required this.name,
@@ -240,16 +154,19 @@ class _$NewCharacterImpl implements _NewCharacter {
   @override
   final Uint8List? image;
 
+  /// Create a copy of NewCharacter
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'NewCharacter.inserting(id: $id, scenarioId: $scenarioId, name: $name, isPublic: $isPublic, isCustomized: $isCustomized, number: $number, image: $image)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$NewCharacterCopyWith<_NewCharacter> get copyWith =>
+      __$NewCharacterCopyWithImpl<_NewCharacter>(this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$NewCharacterImpl &&
+            other is _NewCharacter &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.scenarioId, scenarioId) ||
                 other.scenarioId == scenarioId) &&
@@ -266,109 +183,82 @@ class _$NewCharacterImpl implements _NewCharacter {
   int get hashCode => Object.hash(runtimeType, id, scenarioId, name, isPublic,
       isCustomized, number, const DeepCollectionEquality().hash(image));
 
+  @override
+  String toString() {
+    return 'NewCharacter.inserting(id: $id, scenarioId: $scenarioId, name: $name, isPublic: $isPublic, isCustomized: $isCustomized, number: $number, image: $image)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$NewCharacterCopyWith<$Res>
+    implements $NewCharacterCopyWith<$Res> {
+  factory _$NewCharacterCopyWith(
+          _NewCharacter value, $Res Function(_NewCharacter) _then) =
+      __$NewCharacterCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {ID id,
+      ID scenarioId,
+      String name,
+      bool isPublic,
+      bool isCustomized,
+      int? number,
+      Uint8List? image});
+}
+
+/// @nodoc
+class __$NewCharacterCopyWithImpl<$Res>
+    implements _$NewCharacterCopyWith<$Res> {
+  __$NewCharacterCopyWithImpl(this._self, this._then);
+
+  final _NewCharacter _self;
+  final $Res Function(_NewCharacter) _then;
+
   /// Create a copy of NewCharacter
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$NewCharacterImplCopyWith<_$NewCharacterImpl> get copyWith =>
-      __$$NewCharacterImplCopyWithImpl<_$NewCharacterImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(ID id, ID scenarioId, String name, bool isPublic,
-            bool isCustomized, int? number, Uint8List? image)
-        inserting,
+  $Res call({
+    Object? id = null,
+    Object? scenarioId = null,
+    Object? name = null,
+    Object? isPublic = null,
+    Object? isCustomized = null,
+    Object? number = freezed,
+    Object? image = freezed,
   }) {
-    return inserting(
-        id, scenarioId, name, isPublic, isCustomized, number, image);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(ID id, ID scenarioId, String name, bool isPublic,
-            bool isCustomized, int? number, Uint8List? image)?
-        inserting,
-  }) {
-    return inserting?.call(
-        id, scenarioId, name, isPublic, isCustomized, number, image);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(ID id, ID scenarioId, String name, bool isPublic,
-            bool isCustomized, int? number, Uint8List? image)?
-        inserting,
-    required TResult orElse(),
-  }) {
-    if (inserting != null) {
-      return inserting(
-          id, scenarioId, name, isPublic, isCustomized, number, image);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_NewCharacter value) inserting,
-  }) {
-    return inserting(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NewCharacter value)? inserting,
-  }) {
-    return inserting?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NewCharacter value)? inserting,
-    required TResult orElse(),
-  }) {
-    if (inserting != null) {
-      return inserting(this);
-    }
-    return orElse();
+    return _then(_NewCharacter(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as ID,
+      scenarioId: null == scenarioId
+          ? _self.scenarioId
+          : scenarioId // ignore: cast_nullable_to_non_nullable
+              as ID,
+      name: null == name
+          ? _self.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      isPublic: null == isPublic
+          ? _self.isPublic
+          : isPublic // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isCustomized: null == isCustomized
+          ? _self.isCustomized
+          : isCustomized // ignore: cast_nullable_to_non_nullable
+              as bool,
+      number: freezed == number
+          ? _self.number
+          : number // ignore: cast_nullable_to_non_nullable
+              as int?,
+      image: freezed == image
+          ? _self.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as Uint8List?,
+    ));
   }
 }
 
-abstract class _NewCharacter implements NewCharacter {
-  const factory _NewCharacter(
-      {required final ID id,
-      required final ID scenarioId,
-      required final String name,
-      required final bool isPublic,
-      required final bool isCustomized,
-      final int? number,
-      final Uint8List? image}) = _$NewCharacterImpl;
-
-  @override
-  ID get id;
-  @override
-  ID get scenarioId;
-  @override
-  String get name;
-  @override
-  bool get isPublic;
-  @override
-  bool get isCustomized;
-  @override
-  int? get number;
-  @override
-  Uint8List? get image;
-
-  /// Create a copy of NewCharacter
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$NewCharacterImplCopyWith<_$NewCharacterImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

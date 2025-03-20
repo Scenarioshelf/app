@@ -6,7 +6,7 @@ part of 'memo.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$MemoImpl _$$MemoImplFromJson(Map<String, dynamic> json) => _$MemoImpl(
+_Memo _$MemoFromJson(Map<String, dynamic> json) => _Memo(
       id: ID.fromJson(json['id'] as String),
       title: json['title'] as String,
       content: json['content'] as String,
@@ -15,8 +15,7 @@ _$MemoImpl _$$MemoImplFromJson(Map<String, dynamic> json) => _$MemoImpl(
       isPublic: json['is_public'] as bool? ?? true,
     );
 
-Map<String, dynamic> _$$MemoImplToJson(_$MemoImpl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$MemoToJson(_Memo instance) => <String, dynamic>{
       'id': instance.id,
       'title': instance.title,
       'content': instance.content,

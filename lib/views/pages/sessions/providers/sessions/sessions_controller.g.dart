@@ -6,7 +6,7 @@ part of 'sessions_controller.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$sessionControllerHash() => r'fcb663220b42628e46c57a7be350500d1b8d39fa';
+String _$sessionControllerHash() => r'86a7ba49eb94fc8a7557474980a82d57d446cd53';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -34,23 +34,9 @@ class _SystemHash {
 const sessionControllerProvider = SessionControllerFamily();
 
 /// See also [sessionController].
-class SessionControllerFamily extends Family {
+class SessionControllerFamily extends Family<AsyncValue<List<Session>>> {
   /// See also [sessionController].
   const SessionControllerFamily();
-
-  static const Iterable<ProviderOrFamily>? _dependencies = null;
-
-  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
-
-  @override
-  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
-
-  @override
-  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
-      _allTransitiveDependencies;
-
-  @override
-  String? get name => r'sessionControllerProvider';
 
   /// See also [sessionController].
   SessionControllerProvider call(
@@ -61,7 +47,6 @@ class SessionControllerFamily extends Family {
     );
   }
 
-  @visibleForOverriding
   @override
   SessionControllerProvider getProviderOverride(
     covariant SessionControllerProvider provider,
@@ -71,27 +56,19 @@ class SessionControllerFamily extends Family {
     );
   }
 
-  /// Enables overriding the behavior of this provider, no matter the parameters.
-  Override overrideWith(
-      FutureOr<List<Session>> Function(SessionControllerRef ref) create) {
-    return _$SessionControllerFamilyOverride(this, create);
-  }
-}
-
-class _$SessionControllerFamilyOverride implements FamilyOverride {
-  _$SessionControllerFamilyOverride(this.overriddenFamily, this.create);
-
-  final FutureOr<List<Session>> Function(SessionControllerRef ref) create;
+  static const Iterable<ProviderOrFamily>? _dependencies = null;
 
   @override
-  final SessionControllerFamily overriddenFamily;
+  Iterable<ProviderOrFamily>? get dependencies => _dependencies;
+
+  static const Iterable<ProviderOrFamily>? _allTransitiveDependencies = null;
 
   @override
-  SessionControllerProvider getProviderOverride(
-    covariant SessionControllerProvider provider,
-  ) {
-    return provider._copyWith(create);
-  }
+  Iterable<ProviderOrFamily>? get allTransitiveDependencies =>
+      _allTransitiveDependencies;
+
+  @override
+  String? get name => r'sessionControllerProvider';
 }
 
 /// See also [sessionController].
@@ -118,7 +95,7 @@ class SessionControllerProvider
         );
 
   SessionControllerProvider._internal(
-    super.create, {
+    super._createNotifier, {
     required super.name,
     required super.dependencies,
     required super.allTransitiveDependencies,
@@ -131,7 +108,7 @@ class SessionControllerProvider
 
   @override
   Override overrideWith(
-    FutureOr<List<Session>> Function(SessionControllerRef ref) create,
+    FutureOr<List<Session>> Function(SessionControllerRef provider) create,
   ) {
     return ProviderOverride(
       origin: this,
@@ -148,27 +125,8 @@ class SessionControllerProvider
   }
 
   @override
-  (ID,) get argument {
-    return (userId,);
-  }
-
-  @override
   AutoDisposeFutureProviderElement<List<Session>> createElement() {
     return _SessionControllerProviderElement(this);
-  }
-
-  SessionControllerProvider _copyWith(
-    FutureOr<List<Session>> Function(SessionControllerRef ref) create,
-  ) {
-    return SessionControllerProvider._internal(
-      (ref) => create(ref as SessionControllerRef),
-      name: name,
-      dependencies: dependencies,
-      allTransitiveDependencies: allTransitiveDependencies,
-      debugGetCreateSourceHash: debugGetCreateSourceHash,
-      from: from,
-      userId: userId,
-    );
   }
 
   @override
@@ -185,6 +143,8 @@ class SessionControllerProvider
   }
 }
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 mixin SessionControllerRef on AutoDisposeFutureProviderRef<List<Session>> {
   /// The parameter `userId` of this provider.
   ID get userId;
@@ -199,4 +159,4 @@ class _SessionControllerProviderElement
   ID get userId => (origin as SessionControllerProvider).userId;
 }
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, inference_failure_on_uninitialized_variable, inference_failure_on_function_return_type, inference_failure_on_untyped_parameter, deprecated_member_use_from_same_package
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
