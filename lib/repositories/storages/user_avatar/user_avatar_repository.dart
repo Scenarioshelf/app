@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -9,7 +10,7 @@ import 'package:scenarioshelf/utils/exceptions/app_auth_exception.dart';
 part 'user_avatar_repository.g.dart';
 
 @riverpod
-UserAvatarRepository userAvatarRepository(UserAvatarRepositoryRef ref) => const UserAvatarRepository();
+UserAvatarRepository userAvatarRepository(Ref ref) => const UserAvatarRepository();
 
 /// ユーザのアバターを管理するRepository
 class UserAvatarRepository implements UserAvatarAPI {

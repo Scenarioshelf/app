@@ -9,6 +9,6 @@ class ThemeModeController extends _$ThemeModeController {
   @override
   ThemeMode build() => ThemeMode.system;
 
-  // ignore: use_setters_to_change_properties
-  void update(ThemeMode themeMode) => state = themeMode;
+  @override
+  set state(ThemeMode themeMode) => super.state = themeMode;
 }

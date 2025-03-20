@@ -7,7 +7,7 @@ part of 'sessions_sort_pivot_controller.dart';
 // **************************************************************************
 
 String _$sessionsSortPivotControllerHash() =>
-    r'77a32fb07416c1d463b6a35136f70ee700eaebb5';
+    r'a35c2d5e72d84afa4b2b33900083b677f81dfba4';
 
 /// See also [SessionsSortPivotController].
 @ProviderFor(SessionsSortPivotController)
@@ -24,4 +24,4 @@ final sessionsSortPivotControllerProvider = AutoDisposeNotifierProvider<
 
 typedef _$SessionsSortPivotController = AutoDisposeNotifier<SessionsSortPivot>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

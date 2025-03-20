@@ -29,7 +29,7 @@ class SessionsSortAppBar extends ConsumerWidget {
       snap: true,
       toolbarHeight: 32,
       surfaceTintColor: Theme.of(context).colorScheme.surface,
-      backgroundColor: Theme.of(context).colorScheme.surface.withAlpha(200),
+      backgroundColor: Theme.of(context).colorScheme.surface.withValues(alpha: 0.9),
       flexibleSpace: ClipRRect(
         child: BackdropFilter(
           filter: ImageFilter.blur(

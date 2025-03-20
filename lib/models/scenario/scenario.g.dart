@@ -6,8 +6,7 @@ part of 'scenario.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ScenarioImpl _$$ScenarioImplFromJson(Map<String, dynamic> json) =>
-    _$ScenarioImpl(
+_Scenario _$ScenarioFromJson(Map<String, dynamic> json) => _Scenario(
       id: ID.fromJson(json['id'] as String),
       system: $enumDecode(_$TRPGSystemEnumMap, json['trpg_system']),
       title: json['title'] as String,
@@ -21,8 +20,7 @@ _$ScenarioImpl _$$ScenarioImplFromJson(Map<String, dynamic> json) =>
       author: json['author'] as String?,
     );
 
-Map<String, dynamic> _$$ScenarioImplToJson(_$ScenarioImpl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$ScenarioToJson(_Scenario instance) => <String, dynamic>{
       'id': instance.id,
       'trpg_system': _$TRPGSystemEnumMap[instance.system]!,
       'title': instance.title,

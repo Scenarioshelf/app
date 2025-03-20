@@ -9,7 +9,7 @@ part 'schedule.g.dart';
 part 'schedule_type.dart';
 
 @freezed
-class Schedule with _$Schedule {
+abstract class Schedule with _$Schedule {
   @JsonSerializable(fieldRename: FieldRename.snake)
   @Assert('!playtime.isNegative', 'プレイ時間が負の値になっています')
   factory Schedule({

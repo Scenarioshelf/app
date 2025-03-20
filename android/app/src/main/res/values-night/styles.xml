@@ -15,4 +15,7 @@
     <style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
         <item name="android:windowBackground">?android:colorBackground</item>
     </style>
+    <!-- For image_cropper library
+         https://pub.dev/packages/image_cropper　-->
+    <style name="Ucrop.CropTheme" parent="Theme.AppCompat.DayNight.NoActionBar"/>
 </resources>

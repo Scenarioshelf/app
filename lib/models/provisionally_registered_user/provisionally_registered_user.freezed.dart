@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,96 +10,68 @@ part of 'provisionally_registered_user.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-ProvisionallyRegisteredUser _$ProvisionallyRegisteredUserFromJson(
-    Map<String, dynamic> json) {
-  return _ProvisionallyRegisteredUser.fromJson(json);
-}
 
 /// @nodoc
 mixin _$ProvisionallyRegisteredUser {
-  ID get id => throw _privateConstructorUsedError;
-  String? get name => throw _privateConstructorUsedError;
-  String? get avatarUrl => throw _privateConstructorUsedError;
+  ID get id;
+  String? get name;
+  String? get avatarUrl;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ProvisionallyRegisteredUserCopyWith<ProvisionallyRegisteredUser>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ProvisionallyRegisteredUserCopyWith<$Res> {
-  factory $ProvisionallyRegisteredUserCopyWith(
-          ProvisionallyRegisteredUser value,
-          $Res Function(ProvisionallyRegisteredUser) then) =
-      _$ProvisionallyRegisteredUserCopyWithImpl<$Res,
-          ProvisionallyRegisteredUser>;
-  @useResult
-  $Res call({ID id, String? name, String? avatarUrl});
-}
-
-/// @nodoc
-class _$ProvisionallyRegisteredUserCopyWithImpl<$Res,
-        $Val extends ProvisionallyRegisteredUser>
-    implements $ProvisionallyRegisteredUserCopyWith<$Res> {
-  _$ProvisionallyRegisteredUserCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of ProvisionallyRegisteredUser
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $ProvisionallyRegisteredUserCopyWith<ProvisionallyRegisteredUser>
+      get copyWith => _$ProvisionallyRegisteredUserCopyWithImpl<
+              ProvisionallyRegisteredUser>(
+          this as ProvisionallyRegisteredUser, _$identity);
+
+  /// Serializes this ProvisionallyRegisteredUser to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? id = null,
-    Object? name = freezed,
-    Object? avatarUrl = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as ID,
-      name: freezed == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String?,
-      avatarUrl: freezed == avatarUrl
-          ? _value.avatarUrl
-          : avatarUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is ProvisionallyRegisteredUser &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.avatarUrl, avatarUrl) ||
+                other.avatarUrl == avatarUrl));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, id, name, avatarUrl);
+
+  @override
+  String toString() {
+    return 'ProvisionallyRegisteredUser(id: $id, name: $name, avatarUrl: $avatarUrl)';
   }
 }
 
 /// @nodoc
-abstract class _$$ProvisionallyRegisteredUserImplCopyWith<$Res>
-    implements $ProvisionallyRegisteredUserCopyWith<$Res> {
-  factory _$$ProvisionallyRegisteredUserImplCopyWith(
-          _$ProvisionallyRegisteredUserImpl value,
-          $Res Function(_$ProvisionallyRegisteredUserImpl) then) =
-      __$$ProvisionallyRegisteredUserImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $ProvisionallyRegisteredUserCopyWith<$Res> {
+  factory $ProvisionallyRegisteredUserCopyWith(
+          ProvisionallyRegisteredUser value,
+          $Res Function(ProvisionallyRegisteredUser) _then) =
+      _$ProvisionallyRegisteredUserCopyWithImpl;
   @useResult
   $Res call({ID id, String? name, String? avatarUrl});
 }
 
 /// @nodoc
-class __$$ProvisionallyRegisteredUserImplCopyWithImpl<$Res>
-    extends _$ProvisionallyRegisteredUserCopyWithImpl<$Res,
-        _$ProvisionallyRegisteredUserImpl>
-    implements _$$ProvisionallyRegisteredUserImplCopyWith<$Res> {
-  __$$ProvisionallyRegisteredUserImplCopyWithImpl(
-      _$ProvisionallyRegisteredUserImpl _value,
-      $Res Function(_$ProvisionallyRegisteredUserImpl) _then)
-      : super(_value, _then);
+class _$ProvisionallyRegisteredUserCopyWithImpl<$Res>
+    implements $ProvisionallyRegisteredUserCopyWith<$Res> {
+  _$ProvisionallyRegisteredUserCopyWithImpl(this._self, this._then);
 
+  final ProvisionallyRegisteredUser _self;
+  final $Res Function(ProvisionallyRegisteredUser) _then;
+
+  /// Create a copy of ProvisionallyRegisteredUser
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -106,17 +79,17 @@ class __$$ProvisionallyRegisteredUserImplCopyWithImpl<$Res>
     Object? name = freezed,
     Object? avatarUrl = freezed,
   }) {
-    return _then(_$ProvisionallyRegisteredUserImpl(
+    return _then(_self.copyWith(
       id: null == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as ID,
       name: freezed == name
-          ? _value.name
+          ? _self.name
           : name // ignore: cast_nullable_to_non_nullable
               as String?,
       avatarUrl: freezed == avatarUrl
-          ? _value.avatarUrl
+          ? _self.avatarUrl
           : avatarUrl // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
@@ -125,14 +98,11 @@ class __$$ProvisionallyRegisteredUserImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$ProvisionallyRegisteredUserImpl
-    implements _ProvisionallyRegisteredUser {
-  const _$ProvisionallyRegisteredUserImpl(
+class _ProvisionallyRegisteredUser implements ProvisionallyRegisteredUser {
+  const _ProvisionallyRegisteredUser(
       {required this.id, required this.name, this.avatarUrl});
-
-  factory _$ProvisionallyRegisteredUserImpl.fromJson(
-          Map<String, dynamic> json) =>
-      _$$ProvisionallyRegisteredUserImplFromJson(json);
+  factory _ProvisionallyRegisteredUser.fromJson(Map<String, dynamic> json) =>
+      _$ProvisionallyRegisteredUserFromJson(json);
 
   @override
   final ID id;
@@ -141,59 +111,87 @@ class _$ProvisionallyRegisteredUserImpl
   @override
   final String? avatarUrl;
 
+  /// Create a copy of ProvisionallyRegisteredUser
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'ProvisionallyRegisteredUser(id: $id, name: $name, avatarUrl: $avatarUrl)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ProvisionallyRegisteredUserCopyWith<_ProvisionallyRegisteredUser>
+      get copyWith => __$ProvisionallyRegisteredUserCopyWithImpl<
+          _ProvisionallyRegisteredUser>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$ProvisionallyRegisteredUserToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ProvisionallyRegisteredUserImpl &&
+            other is _ProvisionallyRegisteredUser &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.avatarUrl, avatarUrl) ||
                 other.avatarUrl == avatarUrl));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, id, name, avatarUrl);
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$ProvisionallyRegisteredUserImplCopyWith<_$ProvisionallyRegisteredUserImpl>
-      get copyWith => __$$ProvisionallyRegisteredUserImplCopyWithImpl<
-          _$ProvisionallyRegisteredUserImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$ProvisionallyRegisteredUserImplToJson(
-      this,
-    );
+  String toString() {
+    return 'ProvisionallyRegisteredUser(id: $id, name: $name, avatarUrl: $avatarUrl)';
   }
 }
 
-abstract class _ProvisionallyRegisteredUser
-    implements ProvisionallyRegisteredUser {
-  const factory _ProvisionallyRegisteredUser(
-      {required final ID id,
-      required final String? name,
-      final String? avatarUrl}) = _$ProvisionallyRegisteredUserImpl;
-
-  factory _ProvisionallyRegisteredUser.fromJson(Map<String, dynamic> json) =
-      _$ProvisionallyRegisteredUserImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$ProvisionallyRegisteredUserCopyWith<$Res>
+    implements $ProvisionallyRegisteredUserCopyWith<$Res> {
+  factory _$ProvisionallyRegisteredUserCopyWith(
+          _ProvisionallyRegisteredUser value,
+          $Res Function(_ProvisionallyRegisteredUser) _then) =
+      __$ProvisionallyRegisteredUserCopyWithImpl;
   @override
-  ID get id;
-  @override
-  String? get name;
-  @override
-  String? get avatarUrl;
-  @override
-  @JsonKey(ignore: true)
-  _$$ProvisionallyRegisteredUserImplCopyWith<_$ProvisionallyRegisteredUserImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  @useResult
+  $Res call({ID id, String? name, String? avatarUrl});
 }
+
+/// @nodoc
+class __$ProvisionallyRegisteredUserCopyWithImpl<$Res>
+    implements _$ProvisionallyRegisteredUserCopyWith<$Res> {
+  __$ProvisionallyRegisteredUserCopyWithImpl(this._self, this._then);
+
+  final _ProvisionallyRegisteredUser _self;
+  final $Res Function(_ProvisionallyRegisteredUser) _then;
+
+  /// Create a copy of ProvisionallyRegisteredUser
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = null,
+    Object? name = freezed,
+    Object? avatarUrl = freezed,
+  }) {
+    return _then(_ProvisionallyRegisteredUser(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as ID,
+      name: freezed == name
+          ? _self.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      avatarUrl: freezed == avatarUrl
+          ? _self.avatarUrl
+          : avatarUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+// dart format on

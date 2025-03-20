@@ -7,7 +7,7 @@ part of 'sessions_sort_order_controller.dart';
 // **************************************************************************
 
 String _$sessionsSortOrderControllerHash() =>
-    r'2a6506c3809a774db62f06183044c876b2336e73';
+    r'83043c68974fd1034689837fc022c3ab455a6392';
 
 /// See also [SessionsSortOrderController].
 @ProviderFor(SessionsSortOrderController)
@@ -24,4 +24,4 @@ final sessionsSortOrderControllerProvider = AutoDisposeNotifierProvider<
 
 typedef _$SessionsSortOrderController = AutoDisposeNotifier<SortOrder>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

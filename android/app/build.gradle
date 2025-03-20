@@ -1,11 +1,11 @@
 plugins {
     id "com.android.application"
-    // START: FlutterFire Configuration
-    id 'com.google.gms.google-services'
-    id 'com.google.firebase.crashlytics'
-    // END: FlutterFire Configuration
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
+
+    /// For Google Mobile Services and Crashlytics
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 def localProperties = new Properties()
@@ -42,9 +42,13 @@ task copySources(type: Copy) {
     from "src/${dartEnvironmentVariables.FLAVOR}/res"
     into 'src/main/res'
 }
-task selectGoogleServicesJson(type: Copy) {
-    from "src/firebase/${dartEnvironmentVariables.FLAVOR}/google-services.json"
-    into './'
+task selectGoogleServicesJson {
+    doFirst {
+        copy {
+            from "src/firebase/${dartEnvironmentVariables.FLAVOR}/google-services.json"
+            into './'
+        }
+    }
 }
 tasks.whenTaskAdded { task ->
     task.dependsOn copySources
@@ -81,8 +85,8 @@ android {
         // SDKの直接書き換え以外の設定方法が出てくればそちらに変更でも良さそう
         // minSdkVersion flutter.minSdkVersion
         // targetSdkVersion flutter.targetSdkVersion
-        minSdkVersion 30
-        targetSdkVersion 33
+        minSdkVersion 35
+        targetSdkVersion 35
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         /// @ref https://zenn.dev/altiveinc/articles/separating-environments-in-flutter-old-edition

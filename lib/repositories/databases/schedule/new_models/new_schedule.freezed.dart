@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,127 +10,54 @@ part of 'new_schedule.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$NewSchedule {
-  ID get id => throw _privateConstructorUsedError;
-  ID get sessionId => throw _privateConstructorUsedError;
-  ScheduleType get type => throw _privateConstructorUsedError;
-  DateTime get beginningTime => throw _privateConstructorUsedError;
-  Duration get playtime => throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(ID id, ID sessionId, ScheduleType type,
-            DateTime beginningTime, Duration playtime)
-        inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(ID id, ID sessionId, ScheduleType type,
-            DateTime beginningTime, Duration playtime)?
-        inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(ID id, ID sessionId, ScheduleType type,
-            DateTime beginningTime, Duration playtime)?
-        inserting,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_NewScheduleInserting value) inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NewScheduleInserting value)? inserting,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NewScheduleInserting value)? inserting,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  ID get id;
+  ID get sessionId;
+  ScheduleType get type;
+  DateTime get beginningTime;
+  Duration get playtime;
 
-  @JsonKey(ignore: true)
-  $NewScheduleCopyWith<NewSchedule> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $NewScheduleCopyWith<$Res> {
-  factory $NewScheduleCopyWith(
-          NewSchedule value, $Res Function(NewSchedule) then) =
-      _$NewScheduleCopyWithImpl<$Res, NewSchedule>;
-  @useResult
-  $Res call(
-      {ID id,
-      ID sessionId,
-      ScheduleType type,
-      DateTime beginningTime,
-      Duration playtime});
-}
-
-/// @nodoc
-class _$NewScheduleCopyWithImpl<$Res, $Val extends NewSchedule>
-    implements $NewScheduleCopyWith<$Res> {
-  _$NewScheduleCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of NewSchedule
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $NewScheduleCopyWith<NewSchedule> get copyWith =>
+      _$NewScheduleCopyWithImpl<NewSchedule>(this as NewSchedule, _$identity);
+
   @override
-  $Res call({
-    Object? id = null,
-    Object? sessionId = null,
-    Object? type = null,
-    Object? beginningTime = null,
-    Object? playtime = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as ID,
-      sessionId: null == sessionId
-          ? _value.sessionId
-          : sessionId // ignore: cast_nullable_to_non_nullable
-              as ID,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as ScheduleType,
-      beginningTime: null == beginningTime
-          ? _value.beginningTime
-          : beginningTime // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      playtime: null == playtime
-          ? _value.playtime
-          : playtime // ignore: cast_nullable_to_non_nullable
-              as Duration,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is NewSchedule &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.sessionId, sessionId) ||
+                other.sessionId == sessionId) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.beginningTime, beginningTime) ||
+                other.beginningTime == beginningTime) &&
+            (identical(other.playtime, playtime) ||
+                other.playtime == playtime));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, id, sessionId, type, beginningTime, playtime);
+
+  @override
+  String toString() {
+    return 'NewSchedule(id: $id, sessionId: $sessionId, type: $type, beginningTime: $beginningTime, playtime: $playtime)';
   }
 }
 
 /// @nodoc
-abstract class _$$NewScheduleInsertingImplCopyWith<$Res>
-    implements $NewScheduleCopyWith<$Res> {
-  factory _$$NewScheduleInsertingImplCopyWith(_$NewScheduleInsertingImpl value,
-          $Res Function(_$NewScheduleInsertingImpl) then) =
-      __$$NewScheduleInsertingImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $NewScheduleCopyWith<$Res> {
+  factory $NewScheduleCopyWith(
+          NewSchedule value, $Res Function(NewSchedule) _then) =
+      _$NewScheduleCopyWithImpl;
   @useResult
   $Res call(
       {ID id,
@@ -140,13 +68,14 @@ abstract class _$$NewScheduleInsertingImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$NewScheduleInsertingImplCopyWithImpl<$Res>
-    extends _$NewScheduleCopyWithImpl<$Res, _$NewScheduleInsertingImpl>
-    implements _$$NewScheduleInsertingImplCopyWith<$Res> {
-  __$$NewScheduleInsertingImplCopyWithImpl(_$NewScheduleInsertingImpl _value,
-      $Res Function(_$NewScheduleInsertingImpl) _then)
-      : super(_value, _then);
+class _$NewScheduleCopyWithImpl<$Res> implements $NewScheduleCopyWith<$Res> {
+  _$NewScheduleCopyWithImpl(this._self, this._then);
 
+  final NewSchedule _self;
+  final $Res Function(NewSchedule) _then;
+
+  /// Create a copy of NewSchedule
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -156,25 +85,25 @@ class __$$NewScheduleInsertingImplCopyWithImpl<$Res>
     Object? beginningTime = null,
     Object? playtime = null,
   }) {
-    return _then(_$NewScheduleInsertingImpl(
+    return _then(_self.copyWith(
       id: null == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as ID,
       sessionId: null == sessionId
-          ? _value.sessionId
+          ? _self.sessionId
           : sessionId // ignore: cast_nullable_to_non_nullable
               as ID,
       type: null == type
-          ? _value.type
+          ? _self.type
           : type // ignore: cast_nullable_to_non_nullable
               as ScheduleType,
       beginningTime: null == beginningTime
-          ? _value.beginningTime
+          ? _self.beginningTime
           : beginningTime // ignore: cast_nullable_to_non_nullable
               as DateTime,
       playtime: null == playtime
-          ? _value.playtime
+          ? _self.playtime
           : playtime // ignore: cast_nullable_to_non_nullable
               as Duration,
     ));
@@ -183,8 +112,8 @@ class __$$NewScheduleInsertingImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$NewScheduleInsertingImpl implements _NewScheduleInserting {
-  const _$NewScheduleInsertingImpl(
+class _NewScheduleInserting implements NewSchedule {
+  const _NewScheduleInserting(
       {required this.id,
       required this.sessionId,
       required this.type,
@@ -202,16 +131,20 @@ class _$NewScheduleInsertingImpl implements _NewScheduleInserting {
   @override
   final Duration playtime;
 
+  /// Create a copy of NewSchedule
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'NewSchedule.inserting(id: $id, sessionId: $sessionId, type: $type, beginningTime: $beginningTime, playtime: $playtime)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$NewScheduleInsertingCopyWith<_NewScheduleInserting> get copyWith =>
+      __$NewScheduleInsertingCopyWithImpl<_NewScheduleInserting>(
+          this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$NewScheduleInsertingImpl &&
+            other is _NewScheduleInserting &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.sessionId, sessionId) ||
                 other.sessionId == sessionId) &&
@@ -226,97 +159,70 @@ class _$NewScheduleInsertingImpl implements _NewScheduleInserting {
   int get hashCode =>
       Object.hash(runtimeType, id, sessionId, type, beginningTime, playtime);
 
-  @JsonKey(ignore: true)
+  @override
+  String toString() {
+    return 'NewSchedule.inserting(id: $id, sessionId: $sessionId, type: $type, beginningTime: $beginningTime, playtime: $playtime)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$NewScheduleInsertingCopyWith<$Res>
+    implements $NewScheduleCopyWith<$Res> {
+  factory _$NewScheduleInsertingCopyWith(_NewScheduleInserting value,
+          $Res Function(_NewScheduleInserting) _then) =
+      __$NewScheduleInsertingCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {ID id,
+      ID sessionId,
+      ScheduleType type,
+      DateTime beginningTime,
+      Duration playtime});
+}
+
+/// @nodoc
+class __$NewScheduleInsertingCopyWithImpl<$Res>
+    implements _$NewScheduleInsertingCopyWith<$Res> {
+  __$NewScheduleInsertingCopyWithImpl(this._self, this._then);
+
+  final _NewScheduleInserting _self;
+  final $Res Function(_NewScheduleInserting) _then;
+
+  /// Create a copy of NewSchedule
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$NewScheduleInsertingImplCopyWith<_$NewScheduleInsertingImpl>
-      get copyWith =>
-          __$$NewScheduleInsertingImplCopyWithImpl<_$NewScheduleInsertingImpl>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(ID id, ID sessionId, ScheduleType type,
-            DateTime beginningTime, Duration playtime)
-        inserting,
+  $Res call({
+    Object? id = null,
+    Object? sessionId = null,
+    Object? type = null,
+    Object? beginningTime = null,
+    Object? playtime = null,
   }) {
-    return inserting(id, sessionId, type, beginningTime, playtime);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(ID id, ID sessionId, ScheduleType type,
-            DateTime beginningTime, Duration playtime)?
-        inserting,
-  }) {
-    return inserting?.call(id, sessionId, type, beginningTime, playtime);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(ID id, ID sessionId, ScheduleType type,
-            DateTime beginningTime, Duration playtime)?
-        inserting,
-    required TResult orElse(),
-  }) {
-    if (inserting != null) {
-      return inserting(id, sessionId, type, beginningTime, playtime);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_NewScheduleInserting value) inserting,
-  }) {
-    return inserting(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NewScheduleInserting value)? inserting,
-  }) {
-    return inserting?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NewScheduleInserting value)? inserting,
-    required TResult orElse(),
-  }) {
-    if (inserting != null) {
-      return inserting(this);
-    }
-    return orElse();
+    return _then(_NewScheduleInserting(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as ID,
+      sessionId: null == sessionId
+          ? _self.sessionId
+          : sessionId // ignore: cast_nullable_to_non_nullable
+              as ID,
+      type: null == type
+          ? _self.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as ScheduleType,
+      beginningTime: null == beginningTime
+          ? _self.beginningTime
+          : beginningTime // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      playtime: null == playtime
+          ? _self.playtime
+          : playtime // ignore: cast_nullable_to_non_nullable
+              as Duration,
+    ));
   }
 }
 
-abstract class _NewScheduleInserting implements NewSchedule {
-  const factory _NewScheduleInserting(
-      {required final ID id,
-      required final ID sessionId,
-      required final ScheduleType type,
-      required final DateTime beginningTime,
-      required final Duration playtime}) = _$NewScheduleInsertingImpl;
-
-  @override
-  ID get id;
-  @override
-  ID get sessionId;
-  @override
-  ScheduleType get type;
-  @override
-  DateTime get beginningTime;
-  @override
-  Duration get playtime;
-  @override
-  @JsonKey(ignore: true)
-  _$$NewScheduleInsertingImplCopyWith<_$NewScheduleInsertingImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
+// dart format on

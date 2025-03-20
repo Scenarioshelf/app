@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,115 +10,72 @@ part of 'scenario.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-Scenario _$ScenarioFromJson(Map<String, dynamic> json) {
-  return _Scenario.fromJson(json);
-}
 
 /// @nodoc
 mixin _$Scenario {
-  ID get id => throw _privateConstructorUsedError;
+  ID get id;
   @JsonKey(name: 'trpg_system')
-  TRPGSystem get system => throw _privateConstructorUsedError;
-  String get title => throw _privateConstructorUsedError;
-  List<Character> get characters => throw _privateConstructorUsedError;
-  String? get kana => throw _privateConstructorUsedError;
-  String? get keyVisualUrl => throw _privateConstructorUsedError;
-  String? get storeUrl => throw _privateConstructorUsedError;
-  String? get author => throw _privateConstructorUsedError;
+  TRPGSystem get system;
+  String get title;
+  List<Character> get characters;
+  String? get kana;
+  String? get keyVisualUrl;
+  String? get storeUrl;
+  String? get author;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ScenarioCopyWith<Scenario> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ScenarioCopyWith<$Res> {
-  factory $ScenarioCopyWith(Scenario value, $Res Function(Scenario) then) =
-      _$ScenarioCopyWithImpl<$Res, Scenario>;
-  @useResult
-  $Res call(
-      {ID id,
-      @JsonKey(name: 'trpg_system') TRPGSystem system,
-      String title,
-      List<Character> characters,
-      String? kana,
-      String? keyVisualUrl,
-      String? storeUrl,
-      String? author});
-}
-
-/// @nodoc
-class _$ScenarioCopyWithImpl<$Res, $Val extends Scenario>
-    implements $ScenarioCopyWith<$Res> {
-  _$ScenarioCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of Scenario
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $ScenarioCopyWith<Scenario> get copyWith =>
+      _$ScenarioCopyWithImpl<Scenario>(this as Scenario, _$identity);
+
+  /// Serializes this Scenario to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? id = null,
-    Object? system = null,
-    Object? title = null,
-    Object? characters = null,
-    Object? kana = freezed,
-    Object? keyVisualUrl = freezed,
-    Object? storeUrl = freezed,
-    Object? author = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as ID,
-      system: null == system
-          ? _value.system
-          : system // ignore: cast_nullable_to_non_nullable
-              as TRPGSystem,
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
-              as String,
-      characters: null == characters
-          ? _value.characters
-          : characters // ignore: cast_nullable_to_non_nullable
-              as List<Character>,
-      kana: freezed == kana
-          ? _value.kana
-          : kana // ignore: cast_nullable_to_non_nullable
-              as String?,
-      keyVisualUrl: freezed == keyVisualUrl
-          ? _value.keyVisualUrl
-          : keyVisualUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-      storeUrl: freezed == storeUrl
-          ? _value.storeUrl
-          : storeUrl // ignore: cast_nullable_to_non_nullable
-              as String?,
-      author: freezed == author
-          ? _value.author
-          : author // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is Scenario &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.system, system) || other.system == system) &&
+            (identical(other.title, title) || other.title == title) &&
+            const DeepCollectionEquality()
+                .equals(other.characters, characters) &&
+            (identical(other.kana, kana) || other.kana == kana) &&
+            (identical(other.keyVisualUrl, keyVisualUrl) ||
+                other.keyVisualUrl == keyVisualUrl) &&
+            (identical(other.storeUrl, storeUrl) ||
+                other.storeUrl == storeUrl) &&
+            (identical(other.author, author) || other.author == author));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      system,
+      title,
+      const DeepCollectionEquality().hash(characters),
+      kana,
+      keyVisualUrl,
+      storeUrl,
+      author);
+
+  @override
+  String toString() {
+    return 'Scenario(id: $id, system: $system, title: $title, characters: $characters, kana: $kana, keyVisualUrl: $keyVisualUrl, storeUrl: $storeUrl, author: $author)';
   }
 }
 
 /// @nodoc
-abstract class _$$ScenarioImplCopyWith<$Res>
-    implements $ScenarioCopyWith<$Res> {
-  factory _$$ScenarioImplCopyWith(
-          _$ScenarioImpl value, $Res Function(_$ScenarioImpl) then) =
-      __$$ScenarioImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $ScenarioCopyWith<$Res> {
+  factory $ScenarioCopyWith(Scenario value, $Res Function(Scenario) _then) =
+      _$ScenarioCopyWithImpl;
   @useResult
   $Res call(
       {ID id,
@@ -131,13 +89,14 @@ abstract class _$$ScenarioImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ScenarioImplCopyWithImpl<$Res>
-    extends _$ScenarioCopyWithImpl<$Res, _$ScenarioImpl>
-    implements _$$ScenarioImplCopyWith<$Res> {
-  __$$ScenarioImplCopyWithImpl(
-      _$ScenarioImpl _value, $Res Function(_$ScenarioImpl) _then)
-      : super(_value, _then);
+class _$ScenarioCopyWithImpl<$Res> implements $ScenarioCopyWith<$Res> {
+  _$ScenarioCopyWithImpl(this._self, this._then);
 
+  final Scenario _self;
+  final $Res Function(Scenario) _then;
+
+  /// Create a copy of Scenario
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -150,37 +109,37 @@ class __$$ScenarioImplCopyWithImpl<$Res>
     Object? storeUrl = freezed,
     Object? author = freezed,
   }) {
-    return _then(_$ScenarioImpl(
+    return _then(_self.copyWith(
       id: null == id
-          ? _value.id
+          ? _self.id
           : id // ignore: cast_nullable_to_non_nullable
               as ID,
       system: null == system
-          ? _value.system
+          ? _self.system
           : system // ignore: cast_nullable_to_non_nullable
               as TRPGSystem,
       title: null == title
-          ? _value.title
+          ? _self.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
       characters: null == characters
-          ? _value._characters
+          ? _self.characters
           : characters // ignore: cast_nullable_to_non_nullable
               as List<Character>,
       kana: freezed == kana
-          ? _value.kana
+          ? _self.kana
           : kana // ignore: cast_nullable_to_non_nullable
               as String?,
       keyVisualUrl: freezed == keyVisualUrl
-          ? _value.keyVisualUrl
+          ? _self.keyVisualUrl
           : keyVisualUrl // ignore: cast_nullable_to_non_nullable
               as String?,
       storeUrl: freezed == storeUrl
-          ? _value.storeUrl
+          ? _self.storeUrl
           : storeUrl // ignore: cast_nullable_to_non_nullable
               as String?,
       author: freezed == author
-          ? _value.author
+          ? _self.author
           : author // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
@@ -190,8 +149,8 @@ class __$$ScenarioImplCopyWithImpl<$Res>
 /// @nodoc
 
 @JsonSerializable(fieldRename: FieldRename.snake)
-class _$ScenarioImpl extends _Scenario {
-  _$ScenarioImpl(
+class _Scenario extends Scenario {
+  _Scenario(
       {required this.id,
       @JsonKey(name: 'trpg_system') required this.system,
       required this.title,
@@ -207,9 +166,8 @@ class _$ScenarioImpl extends _Scenario {
             'フリガナに全角カタカナ以外の文字が含まれています'),
         _characters = characters,
         super._();
-
-  factory _$ScenarioImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ScenarioImplFromJson(json);
+  factory _Scenario.fromJson(Map<String, dynamic> json) =>
+      _$ScenarioFromJson(json);
 
   @override
   final ID id;
@@ -236,16 +194,26 @@ class _$ScenarioImpl extends _Scenario {
   @override
   final String? author;
 
+  /// Create a copy of Scenario
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'Scenario(id: $id, system: $system, title: $title, characters: $characters, kana: $kana, keyVisualUrl: $keyVisualUrl, storeUrl: $storeUrl, author: $author)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ScenarioCopyWith<_Scenario> get copyWith =>
+      __$ScenarioCopyWithImpl<_Scenario>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$ScenarioToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ScenarioImpl &&
+            other is _Scenario &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.system, system) || other.system == system) &&
             (identical(other.title, title) || other.title == title) &&
@@ -259,7 +227,7 @@ class _$ScenarioImpl extends _Scenario {
             (identical(other.author, author) || other.author == author));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -272,54 +240,86 @@ class _$ScenarioImpl extends _Scenario {
       storeUrl,
       author);
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$ScenarioImplCopyWith<_$ScenarioImpl> get copyWith =>
-      __$$ScenarioImplCopyWithImpl<_$ScenarioImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$ScenarioImplToJson(
-      this,
-    );
+  String toString() {
+    return 'Scenario(id: $id, system: $system, title: $title, characters: $characters, kana: $kana, keyVisualUrl: $keyVisualUrl, storeUrl: $storeUrl, author: $author)';
   }
 }
 
-abstract class _Scenario extends Scenario {
-  factory _Scenario(
-      {required final ID id,
-      @JsonKey(name: 'trpg_system') required final TRPGSystem system,
-      required final String title,
-      final List<Character> characters,
-      final String? kana,
-      final String? keyVisualUrl,
-      final String? storeUrl,
-      final String? author}) = _$ScenarioImpl;
-  _Scenario._() : super._();
-
-  factory _Scenario.fromJson(Map<String, dynamic> json) =
-      _$ScenarioImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$ScenarioCopyWith<$Res>
+    implements $ScenarioCopyWith<$Res> {
+  factory _$ScenarioCopyWith(_Scenario value, $Res Function(_Scenario) _then) =
+      __$ScenarioCopyWithImpl;
   @override
-  ID get id;
-  @override
-  @JsonKey(name: 'trpg_system')
-  TRPGSystem get system;
-  @override
-  String get title;
-  @override
-  List<Character> get characters;
-  @override
-  String? get kana;
-  @override
-  String? get keyVisualUrl;
-  @override
-  String? get storeUrl;
-  @override
-  String? get author;
-  @override
-  @JsonKey(ignore: true)
-  _$$ScenarioImplCopyWith<_$ScenarioImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @useResult
+  $Res call(
+      {ID id,
+      @JsonKey(name: 'trpg_system') TRPGSystem system,
+      String title,
+      List<Character> characters,
+      String? kana,
+      String? keyVisualUrl,
+      String? storeUrl,
+      String? author});
 }
+
+/// @nodoc
+class __$ScenarioCopyWithImpl<$Res> implements _$ScenarioCopyWith<$Res> {
+  __$ScenarioCopyWithImpl(this._self, this._then);
+
+  final _Scenario _self;
+  final $Res Function(_Scenario) _then;
+
+  /// Create a copy of Scenario
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = null,
+    Object? system = null,
+    Object? title = null,
+    Object? characters = null,
+    Object? kana = freezed,
+    Object? keyVisualUrl = freezed,
+    Object? storeUrl = freezed,
+    Object? author = freezed,
+  }) {
+    return _then(_Scenario(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as ID,
+      system: null == system
+          ? _self.system
+          : system // ignore: cast_nullable_to_non_nullable
+              as TRPGSystem,
+      title: null == title
+          ? _self.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      characters: null == characters
+          ? _self._characters
+          : characters // ignore: cast_nullable_to_non_nullable
+              as List<Character>,
+      kana: freezed == kana
+          ? _self.kana
+          : kana // ignore: cast_nullable_to_non_nullable
+              as String?,
+      keyVisualUrl: freezed == keyVisualUrl
+          ? _self.keyVisualUrl
+          : keyVisualUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      storeUrl: freezed == storeUrl
+          ? _self.storeUrl
+          : storeUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      author: freezed == author
+          ? _self.author
+          : author // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+// dart format on
