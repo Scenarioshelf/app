@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import 'package:scenarioshelf/repositories/firebase/analytics/analytics_repository.dart';
@@ -11,7 +12,7 @@ import 'package:scenarioshelf/utils/logger.dart';
 part 'log_observer.g.dart';
 
 @riverpod
-LogObserver logObserver(LogObserverRef ref) {
+LogObserver logObserver(Ref ref) {
   final analytics = ref.read(analyticsRepositoryProvider);
   return LogObserver(analytics: analytics);
 }

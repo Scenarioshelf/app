@@ -1,3 +1,4 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -16,7 +17,7 @@ import 'package:scenarioshelf/utils/result.dart';
 part 'scenario_repository.g.dart';
 
 @riverpod
-ScenarioRepository scenarioRepository(ScenarioRepositoryRef ref) {
+ScenarioRepository scenarioRepository(Ref ref) {
   final authRepository = ref.read(authRepositoryProvider);
   final keyVisualRepository = ref.read(scenarioKeyVisualRepositoryProvider);
   final characterRepository = ref.read(characterRepositoryProvider);

@@ -1,3 +1,4 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -10,7 +11,7 @@ import 'package:scenarioshelf/utils/result.dart';
 part 'schedule_repository.g.dart';
 
 @riverpod
-ScheduleRepository scheduleRepository(ScheduleRepositoryRef ref) {
+ScheduleRepository scheduleRepository(Ref ref) {
   return const ScheduleRepository();
 }
 

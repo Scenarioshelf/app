@@ -1,3 +1,4 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart' hide Session;
 
@@ -20,7 +21,7 @@ import 'package:scenarioshelf/views/pages/sessions/providers/sessions_sort_pivot
 part 'session_repository.g.dart';
 
 @riverpod
-SessionRepository sessionRepository(SessionRepositoryRef ref) {
+SessionRepository sessionRepository(Ref ref) {
   final authRepository = ref.read(authRepositoryProvider);
   final scheduleRepository = ref.read(scheduleRepositoryProvider);
   final memoRepository = ref.read(memoRepositoryProvider);

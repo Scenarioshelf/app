@@ -1,3 +1,4 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -12,7 +13,7 @@ import 'package:scenarioshelf/utils/result.dart';
 part 'character_repository.g.dart';
 
 @riverpod
-CharacterRepository characterRepository(CharacterRepositoryRef ref) {
+CharacterRepository characterRepository(Ref ref) {
   final characterImageRepository = ref.read(characterImageRepositoryProvider);
 
   return CharacterRepository(characterImageRepository: characterImageRepository);

@@ -1,3 +1,4 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart' hide User;
 
@@ -9,7 +10,7 @@ import 'package:scenarioshelf/utils/extension_types/id.dart';
 part 'user_repository.g.dart';
 
 @riverpod
-UserRepository userRepository(UserRepositoryRef ref) {
+UserRepository userRepository(Ref ref) {
   // final authRepository = ref.read(authRepositoryProvider);
   // final avatarRepository = ref.read(userAvatarRepositoryProvider);
 

@@ -1,3 +1,4 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import 'package:scenarioshelf/models/session/session.dart';
@@ -10,7 +11,7 @@ part 'sessions_controller.g.dart';
 
 @riverpod
 Future<List<Session>> sessionController(
-  SessionControllerRef ref,
+  Ref ref,
   ID userId,
 ) async {
   final pivot = ref.watch(sessionsSortPivotControllerProvider);

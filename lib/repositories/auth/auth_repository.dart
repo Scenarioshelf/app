@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart' hide User;
 
@@ -26,7 +27,7 @@ part 'auth_repository.g.dart';
 const EMAIL_REDIRECT_URL = 'jp.scenarioshelf://login-callback/';
 
 @Riverpod(keepAlive: true)
-AuthRepository authRepository(AuthRepositoryRef ref) {
+AuthRepository authRepository(Ref ref) {
   final avatarRepository = ref.read(userAvatarRepositoryProvider);
 
   return AuthRepository(avatarRepository: avatarRepository);

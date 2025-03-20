@@ -1,3 +1,4 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -10,7 +11,7 @@ import 'package:scenarioshelf/utils/result.dart';
 part 'participant_repository.g.dart';
 
 @riverpod
-ParticipantRepository participantRepository(ParticipantRepositoryRef ref) {
+ParticipantRepository participantRepository(Ref ref) {
   return const ParticipantRepository();
 }
 
