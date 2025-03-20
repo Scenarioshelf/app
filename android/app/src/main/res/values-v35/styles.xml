@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- For image_cropper library
+     https://pub.dev/packages/image_cropper　-->
+<resources>
+  <style name="Ucrop.CropTheme" parent="Theme.AppCompat.Light.NoActionBar">
+      <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+  </style>
+</resources>
