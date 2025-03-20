@@ -16,7 +16,7 @@ dependencies:
   flutter_svg: 2.0.15
   google_fonts: 6.2.1
   image: 4.3.0
-  image_cropper: 7.1.0
+  image_cropper: 9.0.0
   image_picker: 1.1.2
   shimmer: 3.0.0
 
