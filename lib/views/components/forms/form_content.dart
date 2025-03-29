@@ -6,8 +6,7 @@ import 'package:scenarioshelf/constants/themes/colors/app_color.dart';
 class FormContent extends StatelessWidget {
   const FormContent._({
     required this.child,
-    Key? key,
-  }) : super(key: key);
+  });
 
   factory FormContent.textFormField({
     bool isRequired = false,

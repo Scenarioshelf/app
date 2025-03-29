@@ -21,14 +21,14 @@ class SessionsSortBottomSheet extends ConsumerWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         SizedBox(
-          height: 56,
+          height: 50,
           child: Center(
             child: Text(
               '並び替え',
               style: TextStyle(
                 color: Theme.of(context).colorScheme.onSurface,
                 height: 1,
-                fontSize: FontSize.appBar,
+                fontSize: FontSize.bottomSheetTitle,
                 fontWeight: FontWeight.bold,
                 letterSpacing: LetterSpace.medium,
               ),

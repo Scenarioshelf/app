@@ -45,7 +45,7 @@ class FormImage extends StatelessWidget {
                 ),
                 Icon(
                   Icons.add_a_photo_outlined,
-                  color: AppColor.of(context).ui.white.withOpacity(0.8),
+                  color: AppColor.of(context).ui.white.withValues(alpha: 0.8),
                   size: size.width * 0.2,
                 ),
               ],
