@@ -3,8 +3,7 @@ plugins {
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
 
-    /// For Google Mobile Services and Crashlytics
-    id 'com.google.gms.google-services'
+    /// For FirebaseCrashlytics
     id 'com.google.firebase.crashlytics'
 }
 
@@ -41,20 +40,6 @@ if (project.hasProperty('dart-defines')) {
 task copySources(type: Copy) {
     from "src/${dartEnvironmentVariables.FLAVOR}/res"
     into 'src/main/res'
-}
-task selectGoogleServicesJson {
-    doFirst {
-        copy {
-            from "src/firebase/${dartEnvironmentVariables.FLAVOR}/google-services.json"
-            into './'
-        }
-    }
-}
-tasks.whenTaskAdded { task ->
-    task.dependsOn copySources
-    if (task.name == 'processDebugGoogleServices' || task.name == 'processReleaseGoogleServices') {
-        task.dependsOn selectGoogleServicesJson
-    }
 }
 
 android {

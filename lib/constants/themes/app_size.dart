@@ -2,6 +2,7 @@ class FontSize {
   static const double appBar = 16;
   static const double subAppBar = 14;
   static const double appBarOption = 11;
+  static const double bottomSheetTitle = 14;
   static const double label = 14;
   static const double caption = 12;
   static const double body = 12;

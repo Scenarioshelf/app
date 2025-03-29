@@ -7,6 +7,7 @@ import 'package:supabase_flutter/supabase_flutter.dart' hide User;
 
 import 'package:scenarioshelf/constants/assets/gen/assets.gen.dart';
 import 'package:scenarioshelf/models/provisionally_registered_user/provisionally_registered_user.dart';
+import 'package:scenarioshelf/providers/font/font_controller.dart';
 import 'package:scenarioshelf/router/app_routes.dart';
 import 'package:scenarioshelf/views/pages/signing/providers/provisionally_registered_user/provisionally_registered_user_controller.dart';
 
@@ -17,7 +18,9 @@ class SplashPage extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     useMemoized(
       () async {
-        await GoogleFonts.pendingFonts();
+        await GoogleFonts.pendingFonts([
+          ref.read(fontControllerProvider),
+        ]);
 
         WidgetsBinding.instance.addPostFrameCallback((_) {
           final client = Supabase.instance.client;
