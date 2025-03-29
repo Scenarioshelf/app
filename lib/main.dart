@@ -8,11 +8,11 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:scenarioshelf/providers/font/font_controller.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'package:scenarioshelf/constants/themes/app_size.dart';
 import 'package:scenarioshelf/constants/themes/colors/app_color.dart';
+import 'package:scenarioshelf/providers/font/font_controller.dart';
 import 'package:scenarioshelf/providers/theme_mode/theme_mode_controller.dart';
 import 'package:scenarioshelf/repositories/firebase/analytics/analytics_repository.dart';
 import 'package:scenarioshelf/repositories/firebase/firebase_options/dev/firebase_options.dart' as dev_firebase_options;

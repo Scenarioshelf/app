@@ -1,8 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+
 import 'package:image/image.dart' as img;
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
+
 import 'package:scenarioshelf/utils/exceptions/unexpected_type_exception.dart';
 import 'package:scenarioshelf/utils/logger.dart';
 

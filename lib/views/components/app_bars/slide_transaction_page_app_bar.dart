@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:scenarioshelf/constants/themes/app_size.dart';
 
 class SlideTransactionPageAppBar extends StatelessWidget implements PreferredSizeWidget {
