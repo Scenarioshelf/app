@@ -9,7 +9,6 @@
 
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-
 import 'package:flutter_svg/flutter_svg.dart' as _svg;
 import 'package:vector_graphics/vector_graphics.dart' as _vg;
 
