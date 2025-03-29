@@ -27,9 +27,9 @@ class SignInPage extends HookConsumerWidget {
         minimumSize: Size(size.width * 0.8 - 80, 40),
         onPressed: () async {
           ref.invalidate(currentUserControllerProvider);
-          await ref.read(signingControllerProvider.notifier).signInWithEmailAndPassword();
+          final result = await ref.read(signingControllerProvider.notifier).signInWithEmailAndPassword();
 
-          if (!context.mounted) {
+          if (!context.mounted || result.isFailure) {
             return;
           }
 
