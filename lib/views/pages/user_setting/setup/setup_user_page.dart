@@ -9,8 +9,8 @@ import 'package:scenarioshelf/providers/current_user/current_user_controller.dar
 import 'package:scenarioshelf/router/app_routes.dart';
 import 'package:scenarioshelf/utils/exceptions/user_exception.dart';
 import 'package:scenarioshelf/utils/extensions/build_context_extensions.dart';
-import 'package:scenarioshelf/views/components/notifications/status_banner/status_banner.dart';
 import 'package:scenarioshelf/views/components/buttons/labeled_button.dart';
+import 'package:scenarioshelf/views/components/notifications/status_banner/status_banner.dart';
 import 'package:scenarioshelf/views/pages/user_setting/providers/user_setting_controller.dart';
 import 'package:scenarioshelf/views/pages/user_setting/setup/components/setup_avatar.dart';
 

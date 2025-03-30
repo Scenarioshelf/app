@@ -10,8 +10,8 @@ import 'package:scenarioshelf/router/routes/boot_routes/sign_in_route.dart';
 import 'package:scenarioshelf/router/routes/boot_routes/sign_up_route.dart';
 import 'package:scenarioshelf/utils/exceptions/app_auth_exception.dart';
 import 'package:scenarioshelf/utils/extensions/build_context_extensions.dart';
-import 'package:scenarioshelf/views/components/notifications/status_banner/status_banner.dart';
 import 'package:scenarioshelf/views/components/buttons/labeled_button.dart';
+import 'package:scenarioshelf/views/components/notifications/status_banner/status_banner.dart';
 import 'package:scenarioshelf/views/pages/signing/providers/signing/signing_controller.dart';
 
 class BootPage extends HookConsumerWidget {
