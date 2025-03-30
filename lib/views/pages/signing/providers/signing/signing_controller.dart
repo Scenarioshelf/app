@@ -258,7 +258,7 @@ class SigningController extends _$SigningController {
           state = AsyncValue.error(
             AppAuthException(
               message: error.message,
-              display: 'メールアドレスかパスワードが正しくありません',
+              display: 'メールアドレスまたはパスワードが正しくありません',
             ),
             stack,
           );
