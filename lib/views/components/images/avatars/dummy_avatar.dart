@@ -7,9 +7,9 @@ import 'package:shimmer/shimmer.dart';
 
 import 'package:scenarioshelf/constants/themes/colors/app_color.dart';
 import 'package:scenarioshelf/providers/current_user/current_user_controller.dart';
-import 'package:scenarioshelf/utils/converters/color_extension.dart';
 import 'package:scenarioshelf/utils/exceptions/user_exception.dart';
 import 'package:scenarioshelf/utils/extension_types/id.dart';
+import 'package:scenarioshelf/utils/extensions/color_extension.dart';
 import 'package:scenarioshelf/views/components/images/avatars/boring_avatars_mode.dart';
 import 'package:scenarioshelf/views/pages/signing/providers/provisionally_registered_user/provisionally_registered_user_controller.dart';
 
