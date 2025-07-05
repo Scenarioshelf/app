@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "710312653371",
+    "project_id": "scenarioshelf",
+    "storage_bucket": "scenarioshelf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710312653371:android:2ff28a53d327905c8f621e",
+        "android_client_info": {
+          "package_name": "jp.scenarioshelf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710312653371-vd4q1um20cp332oorldn8a663sqdml14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3XmbTaaZn9lB-IWq0vhHkpRhKV8rAb_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710312653371-vd4q1um20cp332oorldn8a663sqdml14.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "710312653371-svtul27sale65c46ejc15hotueikv0cj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.scenarioshelf"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

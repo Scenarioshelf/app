@@ -1,0 +1,82 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:recommended',
+  ],
+  timezone: 'Asia/Tokyo',
+  schedule: [
+    'before 4am on Monday',
+  ],
+  enabledManagers: [
+    'github-actions',
+    'pub',
+    'fvm',
+  ],
+  packageRules: [
+    {
+      groupName: 'Flutter/Dart Packages',
+      matchManagers: [
+        'fvm',
+      ],
+      matchPackageNames: [
+        'flutter',
+      ],
+      enabled: true,
+      versioning: 'semver',
+    },
+    {
+      groupName: 'Flutter/Dart Packages',
+      matchPackageNames: [
+        'flutter',
+        'flutter_localizations',
+        'flutter_test',
+        'dart',
+      ],
+    },
+    {
+      groupName: 'Firebase Packages',
+      matchPackageNames: [
+        'cloud_firestore',
+        'firebase_storage',
+        'firebase_messaging',
+        'firebase_remote_config',
+        'firebase_crashlytics',
+        'firebase_analytics',
+        'firebase_auth',
+        'firebase_core',
+        'firebase_dynamic_links',
+        'firebase_messaging',
+      ],
+    },
+    {
+      groupName: 'All minor and patch dependencies',
+      matchUpdateTypes: [
+        'minor',
+        'patch',
+      ],
+      matchPackageNames: [
+        '!cloud_firestore',
+        '!firebase_storage',
+        '!firebase_messaging',
+        '!firebase_remote_config',
+        '!firebase_crashlytics',
+        '!firebase_analytics',
+        '!firebase_auth',
+        '!firebase_core',
+        '!firebase_dynamic_links',
+        '!firebase_messaging',
+        '!flutter',
+        '!flutter_localizations',
+        '!flutter_test',
+        '!dart',
+      ],
+    },
+  ],
+  prHourlyLimit: 0,
+  prConcurrentLimit: 0,
+  labels: [
+    'Type: Renovate',
+  ],
+  configMigration: true,
+  dependencyDashboard: false,
+}

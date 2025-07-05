@@ -1,0 +1,3 @@
+FLAVOR=dev
+APP_ID_SUFFIX=.dev
+GOOGLE_AUTH_CLIENT_ID=700034805800-6sa0qsspi2ue0m4brkv5mc9uc5nvmp9v.apps.googleusercontent.com

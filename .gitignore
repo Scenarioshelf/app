@@ -30,7 +30,6 @@
 .pub-cache/
 .pub/
 /build/
-.fvm/flutter_sdk
 
 # Symbolication related
 app.*.symbols
@@ -85,9 +84,7 @@ app.*.map.json
 **/ios/Flutter/DartDefines.xcconfig
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
-**/ios/**/firebase_app_id_file.json
 **/ios/Podfile.lock
-**/ios/Runner.xcodeproj/project.pbxproj
 
 # macOS
 **/macos/Flutter/GeneratedPluginRegistrant.swift
@@ -104,7 +101,14 @@ coverage/
 !/dev/ci/**/Gemfile.lock
 
 # Firebase
-**/android/**/google-services.json
-**/ios/**/GoogleService-Info.plist
-**/lib/**/firebase_options.dart
+**/android/app/google-services.json
+**/ios/Runner/GoogleService-Info.plist
+**/ios/firebase_app_id_file.json
 **/android/app/src/main/res/mipmap*/
+
+# FVM Version Cache
+.fvm/
+
+# Env
+*.env
+*.env.*

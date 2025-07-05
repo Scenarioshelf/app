@@ -1,6 +1,47 @@
 {
-    "cSpell.words": [
-        "scenarioshelf",
-        "TRPG"
-    ]
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      140
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "cSpell.words": [
+    "dotenv",
+    "etags",
+    "flutterquickstart",
+    "micady",
+    "plpgsql",
+    "pubspec",
+    "rgba",
+    "scenarioshelf",
+    "shinobi",
+    "signup",
+    "supabase",
+    "svgs",
+    "TRPG",
+    "upsert"
+  ],
+  "dart.flutterSdkPath": ".fvm/versions/3.29.2",
+  "dart.lineLength": 140,
+  "deno.enablePaths": [
+    "supabase/functions"
+  ],
+  "deno.lint": true,
+  "deno.unstable": true,
+  "search.exclude": {
+    "**.freezed.dart": true,
+    "/lib/proto": true,
+    "pubspec.lock": true
+  }
 }

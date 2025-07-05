@@ -1,0 +1,4 @@
+enum WidgetBrightness {
+  light,
+  dark,
+}
