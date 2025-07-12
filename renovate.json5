@@ -12,6 +12,9 @@
     'pub',
     'fvm',
   ],
+  fvm: {
+    enabled: true
+  },
   packageRules: [
     {
       groupName: 'Flutter/Dart Packages',
