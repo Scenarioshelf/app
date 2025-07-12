@@ -1,13 +1,3 @@
--- このマイグレーションデータがないと Auth アクセス時にエラーが吐かれる
--- 参考
---   https://github.com/orgs/supabase/discussions/20722
---   https://qiita.com/NagaJun/items/323c232bf553b619928a
--- grant ALL on table auth.schema_migrations to postgres;
--- grant ALL on table auth.schema_migrations to anon;
--- grant ALL on table auth.schema_migrations to authenticated;
--- grant ALL on table auth.schema_migrations to service_role;
--- insert into auth.schema_migrations values ('20221208132122') on conflict do nothing;
-
 -- Profiles Table の定義
 create table profiles (
   id uuid references auth.users on delete cascade primary key,
