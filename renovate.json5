@@ -7,11 +7,12 @@
   schedule: [
     'before 4am on Monday',
   ],
-  enabledManagers: [
-    'github-actions',
-    'pub',
-    'fvm',
-  ],
+  github-actions: {
+    enabled: true
+  },
+  pub: {
+    enabled: true
+  },
   fvm: {
     enabled: true
   },
