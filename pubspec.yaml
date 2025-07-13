@@ -52,7 +52,7 @@ dev_dependencies:
   freezed: 3.0.4
   json_serializable: 6.9.4
   riverpod_generator: 2.6.5
-  go_router_builder: 2.8.2
+  go_router_builder: 3.0.1
   flutter_launcher_icons: 0.14.3
   flutter_oss_licenses: 3.0.4
   flutter_gen_runner: 5.10.0
