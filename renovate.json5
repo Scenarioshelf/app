@@ -20,25 +20,20 @@
       groupName: 'Flutter/Dart Packages',
       matchManagers: [
         'fvm',
+        'pub',
       ],
-      matchPackageNames: [
-        'flutter',
-      ],
-      enabled: true,
-      versioning: 'semver',
-    },
-    {
-      groupName: 'Flutter/Dart Packages',
-      matchPackageNames: [
+      matchDepNames: [
         'flutter',
         'flutter_localizations',
         'flutter_test',
         'dart',
       ],
+      enabled: true,
+      versioning: 'semver',
     },
     {
       groupName: 'Firebase Packages',
-      matchPackageNames: [
+      matchDepNames: [
         'cloud_firestore',
         'firebase_storage',
         'firebase_messaging',
@@ -57,7 +52,7 @@
         'minor',
         'patch',
       ],
-      matchPackageNames: [
+      matchDepNames: [
         '!cloud_firestore',
         '!firebase_storage',
         '!firebase_messaging',
