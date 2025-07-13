@@ -5,7 +5,7 @@ description: TRPG通過シナリオ記録サービス
 
 environment: 
   sdk: '>=3.4.3 <4.0.0'
-  flutter: '3.29.2'
+  flutter: '3.32.6'
 
 dependencies: 
   flutter: 
@@ -58,7 +58,7 @@ dev_dependencies:
   flutter_gen_runner: 5.10.0
   
   # Linter
-  flutter_lints: 5.0.0
+  flutter_lints: 6.0.0
   custom_lint: 0.7.5
   very_good_analysis: 9.0.0
   riverpod_lint: 2.6.5
