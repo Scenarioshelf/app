@@ -7,7 +7,7 @@
   schedule: [
     'before 4am on Monday',
   ],
-  github-actions: {
+  'github-actions': {
     enabled: true
   },
   pub: {
