@@ -1,7 +1,3 @@
--- このマイグレーションデータがないと Auth アクセス時にエラーが吐かれる
--- 参考 https://github.com/orgs/supabase/discussions/20722
-insert into auth.schema_migrations values ('20221208132122') on conflict do nothing;
-
 -- Profiles Table の定義
 create table profiles (
   id uuid references auth.users on delete cascade primary key,
