@@ -7,7 +7,7 @@ class SessionsEmpty extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = MediaQuery.sizeOf(context);
 
     return Column(
       mainAxisSize: MainAxisSize.min,

@@ -258,7 +258,7 @@ class SigningController extends _$SigningController {
           state = AsyncValue.error(
             AppAuthException(
               message: error.message,
-              display: '認証メールの確認がされていません',
+              display: 'メールアドレスまたはパスワードが正しくありません',
             ),
             stack,
           );

@@ -6,8 +6,8 @@ import 'package:scenarioshelf/constants/assets/gen/assets.gen.dart';
 import 'package:scenarioshelf/constants/themes/app_size.dart';
 import 'package:scenarioshelf/router/router.dart';
 import 'package:scenarioshelf/utils/exceptions/app_auth_exception.dart';
-import 'package:scenarioshelf/utils/root_scaffold_messenger_key.dart';
-import 'package:scenarioshelf/views/components/acknowledgements/status_banner.dart';
+import 'package:scenarioshelf/utils/extensions/build_context_extensions.dart';
+import 'package:scenarioshelf/views/components/notifications/status_banner/status_banner.dart';
 import 'package:scenarioshelf/views/pages/signing/components/signing_email_form.dart';
 import 'package:scenarioshelf/views/pages/signing/components/signing_password_form.dart';
 import 'package:scenarioshelf/views/pages/signing/providers/signing/signing_controller.dart';
@@ -26,14 +26,11 @@ class SigningPageFrame extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     ref.listen(signingControllerProvider, (previous, next) {
       if (previous is! AsyncError && next is AsyncError) {
-        rootScaffoldMessengerKey.currentState?.clearMaterialBanners();
-
         final Object? error = next.error;
         final String message = error is AppAuthException ? error.indicate() : '原因不明のエラーが発生しました';
 
-        rootScaffoldMessengerKey.currentState?.showMaterialBanner(
+        context.showStatusBanner(
           StatusBanner.error(
-            context: context,
             content: Text(message),
           ),
         );
@@ -42,7 +39,7 @@ class SigningPageFrame extends HookConsumerWidget {
       }
     });
 
-    final size = MediaQuery.of(context).size;
+    final size = MediaQuery.sizeOf(context);
 
     return Scaffold(
       body: SafeArea(

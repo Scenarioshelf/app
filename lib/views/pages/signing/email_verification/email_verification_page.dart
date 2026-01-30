@@ -8,9 +8,9 @@ import 'package:scenarioshelf/constants/themes/widget_brightness.dart';
 import 'package:scenarioshelf/router/app_routes.dart';
 import 'package:scenarioshelf/router/routes/boot_routes/sign_up_route.dart';
 import 'package:scenarioshelf/utils/exceptions/app_auth_exception.dart';
-import 'package:scenarioshelf/utils/root_scaffold_messenger_key.dart';
-import 'package:scenarioshelf/views/components/acknowledgements/status_banner.dart';
+import 'package:scenarioshelf/utils/extensions/build_context_extensions.dart';
 import 'package:scenarioshelf/views/components/buttons/labeled_button.dart';
+import 'package:scenarioshelf/views/components/notifications/status_banner/status_banner.dart';
 import 'package:scenarioshelf/views/pages/signing/providers/signing/signing_controller.dart';
 
 class EmailVerificationPage extends HookConsumerWidget {
@@ -20,14 +20,11 @@ class EmailVerificationPage extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     ref.listen(signingControllerProvider, (previous, next) {
       if (previous is! AsyncError && next is AsyncError) {
-        rootScaffoldMessengerKey.currentState?.clearMaterialBanners();
-
         final Object? error = next.error;
         final String message = error is AppAuthException ? error.indicate() : '原因不明のエラーが発生しました';
 
-        rootScaffoldMessengerKey.currentState?.showMaterialBanner(
+        context.showStatusBanner(
           StatusBanner.error(
-            context: context,
             content: Text(message),
           ),
         );
@@ -36,7 +33,7 @@ class EmailVerificationPage extends HookConsumerWidget {
       }
     });
 
-    final size = MediaQuery.of(context).size;
+    final size = MediaQuery.sizeOf(context);
 
     return Scaffold(
       body: SafeArea(
@@ -89,12 +86,11 @@ class EmailVerificationPage extends HookConsumerWidget {
                           return;
                         }
 
-                        rootScaffoldMessengerKey.currentState?.clearMaterialBanners();
-                        rootScaffoldMessengerKey.currentState?.showMaterialBanner(
+                        context.showStatusBanner(
                           StatusBanner.success(
-                            context: context,
                             content: const Text('認証メールを再送しました'),
                           ),
+                          displayDuration: const Duration(seconds: 3),
                         );
                       },
                       label: '再送',
@@ -106,7 +102,7 @@ class EmailVerificationPage extends HookConsumerWidget {
                       brightness: WidgetBrightness.light,
                       minimumSize: Size(size.width * 0.8, 40),
                       onPressed: () async {
-                        rootScaffoldMessengerKey.currentState?.clearMaterialBanners();
+                        context.removeStatusBanner();
                         final result = await ref.read(signingControllerProvider.notifier).changeEmail();
                         if (result.isFailure) {
                           return;
@@ -128,7 +124,7 @@ class EmailVerificationPage extends HookConsumerWidget {
                       isLoading: ref.watch(signingControllerProvider).isLoading,
                       minimumSize: Size(size.width * 0.8, 40),
                       onPressed: () async {
-                        rootScaffoldMessengerKey.currentState?.clearMaterialBanners();
+                        context.removeStatusBanner();
                         final result = await ref.read(signingControllerProvider.notifier).signInWithEmailAndPassword();
                         if (result.isFailure) {
                           return;

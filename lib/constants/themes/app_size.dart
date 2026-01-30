@@ -2,9 +2,11 @@ class FontSize {
   static const double appBar = 16;
   static const double subAppBar = 14;
   static const double appBarOption = 11;
+  static const double bottomSheetTitle = 14;
   static const double label = 14;
   static const double caption = 12;
   static const double body = 12;
+  static const double bodyLarge = 14;
 }
 
 class MarginSize {
@@ -19,6 +21,7 @@ class MarginSize {
 class PaddingSize {
   static const double minimum = 4;
   static const double small = 8;
+  static const double little = 12;
   static const double medium = 16;
   static const double large = 32;
 }
@@ -52,4 +55,9 @@ class RadiusSize {
   static const double small = 8;
   static const double medium = 16;
   static const double large = 32;
+}
+
+class UISize {
+  static const double appToolbarHeight = 48;
+  static const double formContent = 40;
 }

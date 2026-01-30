@@ -16,8 +16,8 @@ class SignInPage extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final size = MediaQuery.of(context).size;
-    final formKey = useState<GlobalKey<FormState>>(GlobalKey<FormState>());
+    final size = MediaQuery.sizeOf(context);
+    final formKey = useState(GlobalKey<FormState>());
 
     return SigningPageFrame(
       formKey: formKey.value,
@@ -27,9 +27,9 @@ class SignInPage extends HookConsumerWidget {
         minimumSize: Size(size.width * 0.8 - 80, 40),
         onPressed: () async {
           ref.invalidate(currentUserControllerProvider);
-          await ref.read(signingControllerProvider.notifier).signInWithEmailAndPassword();
+          final result = await ref.read(signingControllerProvider.notifier).signInWithEmailAndPassword();
 
-          if (!context.mounted) {
+          if (!context.mounted || result.isFailure) {
             return;
           }
 

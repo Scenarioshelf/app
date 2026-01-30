@@ -7,11 +7,15 @@ abstract class UIColor {
   final Color loading = const Color(0xFFffb300);
   final Color error = const Color(0xFFff3300);
 
+  Color get formBackground;
   Color get shimmerBase;
   Color get shimmerHighlight;
 }
 
 class LightUIColor extends UIColor {
+  @override
+  Color get formBackground => const Color(0xFFf7f2f2);
+
   @override
   Color get shimmerBase => const Color(0xFFeeeeee);
 
@@ -20,6 +24,9 @@ class LightUIColor extends UIColor {
 }
 
 class DarkUIColor extends UIColor {
+  @override
+  Color get formBackground => const Color(0xFF201a17);
+
   @override
   Color get shimmerBase => const Color(0xFF222222);
 

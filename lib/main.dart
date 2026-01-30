@@ -6,13 +6,13 @@ import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'package:scenarioshelf/constants/themes/app_size.dart';
 import 'package:scenarioshelf/constants/themes/colors/app_color.dart';
+import 'package:scenarioshelf/providers/font/font_controller.dart';
 import 'package:scenarioshelf/providers/theme_mode/theme_mode_controller.dart';
 import 'package:scenarioshelf/repositories/firebase/analytics/analytics_repository.dart';
 import 'package:scenarioshelf/repositories/firebase/firebase_options/dev/firebase_options.dart' as dev_firebase_options;
@@ -75,13 +75,14 @@ class Scenarioshelf extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(routerProvider);
+    final font = ref.watch(fontControllerProvider);
 
     ref.read(analyticsRepositoryProvider).logAppOpen();
 
     final theme = ThemeData(
       useMaterial3: true,
       colorScheme: AppColor.of(context).material,
-      textTheme: GoogleFonts.ibmPlexSansJpTextTheme(),
+      textTheme: font,
       floatingActionButtonTheme: Theme.of(context).floatingActionButtonTheme.copyWith(
             foregroundColor: AppColor.of(context).material.primary,
             backgroundColor: AppColor.of(context).material.surface,

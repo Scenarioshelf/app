@@ -8,9 +8,9 @@ import 'package:scenarioshelf/constants/themes/widget_brightness.dart';
 import 'package:scenarioshelf/providers/current_user/current_user_controller.dart';
 import 'package:scenarioshelf/router/app_routes.dart';
 import 'package:scenarioshelf/utils/exceptions/user_exception.dart';
-import 'package:scenarioshelf/utils/root_scaffold_messenger_key.dart';
-import 'package:scenarioshelf/views/components/acknowledgements/status_banner.dart';
+import 'package:scenarioshelf/utils/extensions/build_context_extensions.dart';
 import 'package:scenarioshelf/views/components/buttons/labeled_button.dart';
+import 'package:scenarioshelf/views/components/notifications/status_banner/status_banner.dart';
 import 'package:scenarioshelf/views/pages/user_setting/providers/user_setting_controller.dart';
 import 'package:scenarioshelf/views/pages/user_setting/setup/components/setup_avatar.dart';
 
@@ -21,14 +21,11 @@ class SetupUserPage extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     ref.listen(userSettingControllerProvider, (previous, next) {
       if (previous is! AsyncError && next is AsyncError) {
-        rootScaffoldMessengerKey.currentState?.clearMaterialBanners();
-
         final Object? error = next.error;
         final String message = error is UserException ? error.indicate() : '原因不明のエラーが発生しました';
 
-        rootScaffoldMessengerKey.currentState?.showMaterialBanner(
+        context.showStatusBanner(
           StatusBanner.error(
-            context: context,
             content: Text(message),
           ),
         );
@@ -37,8 +34,8 @@ class SetupUserPage extends HookConsumerWidget {
       }
     });
 
-    final size = MediaQuery.of(context).size;
-    final formKey = useState<GlobalKey<FormState>>(GlobalKey<FormState>());
+    final size = MediaQuery.sizeOf(context);
+    final formKey = useState(GlobalKey<FormState>());
 
     return Scaffold(
       body: SafeArea(

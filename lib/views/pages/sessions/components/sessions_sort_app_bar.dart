@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -28,6 +30,17 @@ class SessionsSortAppBar extends ConsumerWidget {
       toolbarHeight: 32,
       surfaceTintColor: Theme.of(context).colorScheme.surface,
       backgroundColor: Theme.of(context).colorScheme.surface.withValues(alpha: 0.9),
+      flexibleSpace: ClipRRect(
+        child: BackdropFilter(
+          filter: ImageFilter.blur(
+            sigmaX: 3,
+            sigmaY: 3,
+          ),
+          child: Container(
+            color: Colors.transparent,
+          ),
+        ),
+      ),
       title: RichText(
         text: TextSpan(
           style: TextStyle(
