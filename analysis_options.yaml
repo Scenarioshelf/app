@@ -17,6 +17,13 @@ analyzer:
     - "**/*.freezed.dart"
     - "**/oss_licenses.dart"
     - "**/firebase_options.dart"
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
   errors:
     invalid_annotation_target: ignore
     unrecognized_error_code: ignore
