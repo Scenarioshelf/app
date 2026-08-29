@@ -49,7 +49,7 @@ dev_dependencies:
   
   # Generator
   build_runner: 2.4.15
-  freezed: 3.0.4
+  freezed: 4.0.1
   json_serializable: 6.9.4
   riverpod_generator: 2.6.5
   go_router_builder: 2.8.2
