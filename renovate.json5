@@ -8,13 +8,13 @@
     'before 4am on Monday',
   ],
   'github-actions': {
-    enabled: true
+    enabled: true,
   },
   pub: {
-    enabled: true
+    enabled: true,
   },
   fvm: {
-    enabled: true
+    enabled: true,
   },
   packageRules: [
     {
@@ -77,5 +77,7 @@
     'Type: Renovate',
   ],
   configMigration: true,
-  dependencyDashboard: false,
+  dependencyDashboard: {
+    enabled: false,
+  },
 }
